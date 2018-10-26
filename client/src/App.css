@@ -9,6 +9,29 @@
   /*border-radius: 5%;*/
 
 /*}*/
+@media only screen and (min-width: 320px) {
+.landingIcons {
+    margin: 2%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .landingIcons {
+    margin: 3%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .landingIcons {
+    margin: 4% 6% 4% 6%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .landingIcons {
+    margin: 4% 10% 4% 10%;
+  }
+}
 
 
 .landing {
