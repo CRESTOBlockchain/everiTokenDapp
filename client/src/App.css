@@ -1,0 +1,76 @@
+
+
+/*.img {*/
+  /*width: 100%;*/
+  /*display: block;*/
+  /*height: auto;*/
+  /*text-align: center;*/
+  /*margin: auto;*/
+  /*border-radius: 5%;*/
+
+/*}*/
+
+
+.landing {
+  position: relative;
+  background: url('https://user-images.githubusercontent.com/21117852/43917330-9ff70fcc-9c42-11e8-9971-51674beae527.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
+}
+
+.landing-inner {
+  padding-top: 80px;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+
+
+
+
+
+/*.remove-btn {*/
+/*margin-right: 0.5rem;*/
+/*}*/
+
+/*.fade-enter {*/
+/*opacity: 0.01;*/
+/*}*/
+
+/*.fade-enter-active {*/
+/*opacity: 1;*/
+/*transition: opacity 1000ms ease-in;*/
+/*}*/
+
+
+/*.fade-exit{*/
+/*opacity: 1;*/
+/*}*/
+
+/*.fade-exit-active {*/
+/*opacity: 0.01;*/
+/*transition: opacity 1000ms ease-in;*/
+/*}*/
