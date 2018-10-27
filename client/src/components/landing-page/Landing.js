@@ -23,14 +23,16 @@ class Landing extends Component {
                             <div className="row">
                                 <div className="col-md-12 text-center">
                                     <h1 className="display-3 mb-4">CRESTO</h1>
-                                    <p className="lead">
-                                        {' '}
-                                        CRESTO is a fintech solution on real estate investment market. CRESTO platform
-                                        allows asset owners and developers tokenize their assets and hold initial sale
-                                        of their tokenized securities. It is also a centralized platform for secondary
-                                        trading of asset-backed tokens.
-                                    </p>
+                                    <h4>
+
+                                        Fintech solution for real estate market which brings together
+                                    </h4>
                                     <hr/>
+                                    <hr/>
+
+
+
+
 
                                     {/*<Link to="/register" className="btn btn-lg btn-info mr-2">*/}
                                         {/*Sign Up*/}
@@ -41,27 +43,55 @@ class Landing extends Component {
 
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <hr/>
-                <hr/>
+                            <div className="row">
+                                <div className='col text-center'>
+                                    <h4>Asset owners </h4>
+                                </div>
+                                <div className='col text-center'>
+                                    <h4>
+
+                                        Investors
+                                    </h4>
+                                </div>
+                            </div>
 
 
+                            <div className="row">
+                                <div className='col text-center'>
+                                    <p className='lead'>
 
-                <div className="container">
-                    <div className="row">
-                        <div className="col text-center" >
-                            <FontAwesomeIcon icon={faBalanceScale} size="6x" className='landingIcons '/><p>Full legal compliance</p>
+                                        We tokenize your assets 	&
+                                        hold initial sale of your securities</p>
+
+                                </div>
+                                <div className='col text-center'>
+                                    <p className='lead'>
+
+                                    We give you opportunity to invest into real estate backed securities	& Trade your securities on secondary market</p>
+                                </div>
+                            </div>
+
+                            <hr/>
+
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col text-center" >
+                                        <FontAwesomeIcon icon={faBalanceScale} size="3x" className='landingIcons '/><h6>Full legal compliance</h6>
+                                        <p className="small border border-light">We are committed not only to comply with all financial regulations, but to actively promote cooperation with relevant financial authorities of countries where we will operate. We see crystal clear reputation of our own company and all our partners as the key to success in this nascent and very patent industry.</p>
 
 
-                        </div>
-                        <div className="col text-center">
-                            <FontAwesomeIcon icon={faHandshake} size="6x" className='landingIcons'/><p>Cooperation instead of “disruption”</p>
+                                    </div>
+                                    <div className="col text-center">
+                                        <FontAwesomeIcon icon={faHandshake} size="3x" className='landingIcons'/><h6>Cooperation instead of “disruption”</h6>
+                                        <p className="small border border-light">We aim at organic and seamless integration of proposed solution into existing financial ecosystem; providing real estate investors and sponsors with additional opportunities. We do not belive in "disruption” of current financial institutions. We believe in cooperation.</p>
 
-                        </div>
-                        <div className="col text-center">
-                            <FontAwesomeIcon icon={faWifi} size="6x" className='landingIcons'/><p>Clients’ advantage through technology</p>
+                                    </div>
+                                    <div className="col text-center">
+                                        <FontAwesomeIcon icon={faWifi} size="3x" className='landingIcons'/><h6>Advantage brought by technology</h6>
+                                        <p className="small border border-light">Asset  holders and retail investors are offered alternative way to connect - through CRESO platform. CRESTO is built on everitoken  public blockchain and allows to trade tokens (being essentially digital securities) on primary and secondary markets. Safe contract technology is used to regulate asset managers' and investors' relations in a transparable and safe way.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

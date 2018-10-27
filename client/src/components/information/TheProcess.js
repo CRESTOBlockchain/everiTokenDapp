@@ -15,7 +15,7 @@ class TheProcess extends Component {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-12 text-center">
-                                        <img src='https://user-images.githubusercontent.com/21117852/47596138-dbd14380-d9b6-11e8-9814-343bd00c6229.png'/>
+                                        <img src='https://user-images.githubusercontent.com/21117852/47609337-05e63c80-da6f-11e8-87c6-a4fc9de7755c.png'/>
                                     </div>
                                 </div>
                             </div>

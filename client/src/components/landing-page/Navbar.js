@@ -117,7 +117,7 @@ class Navbar extends Component {
                 <li className="nav-item">
                     <Link className="nav-link" to="/theProcess">
                         {' '}
-                        The Process
+                        How the process works
                     </Link>
                 </li>
 
