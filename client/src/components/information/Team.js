@@ -27,10 +27,10 @@ class Team extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col text-center" >
-                            <img src='https://user-images.githubusercontent.com/21117852/47596798-7c296700-d9bb-11e8-91de-4e8177105da1.png'/>
+                            <img src=''/>
                         </div>
                         <div className="col text-center">
-                            <img src='https://user-images.githubusercontent.com/21117852/47596792-66b43d00-d9bb-11e8-9fe0-243f7d5dff04.png'/>
+                            <img src=''/>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,19 @@
+.downloadBrochure{
+    float: right;
+}
+
 
 @media only screen and (min-width: 320px) {
     .landingIcons {
         margin: 2%;
+    }
+    .iconText {
+        /*white-space: nowrap;*/
+        width: auto;
+        height: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid #000000;
     }
     img {
         max-width: 100%;
@@ -13,6 +25,14 @@
 }
 
 @media only screen and (min-width: 500px) {
+    .iconText {
+        /*white-space: nowrap;*/
+        width: auto;
+        height: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid #000000;
+    }
     .landingIcons {
         margin: 3%;
     }
@@ -26,6 +46,13 @@
 }
 
 @media only screen and (min-width: 800px) {
+    .iconText {
+        width: auto;
+        height: 190px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid #000000;
+    }
     .landingIcons {
         margin: 4% 6% 4% 6%;
     }
@@ -39,6 +66,13 @@
 }
 
 @media only screen and (min-width: 1000px) {
+    .iconText {
+        width: auto;
+        height: 180px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid #000000;
+    }
     .landingIcons {
         margin: 4% 10% 4% 10%;
     }
@@ -72,7 +106,7 @@
 }
 
 .landing-inner {
-    padding-top: 80px;
+    padding-top: 20px;
 }
 
 .dark-overlay {
