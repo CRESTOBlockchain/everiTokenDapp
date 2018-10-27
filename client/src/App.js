@@ -10,9 +10,9 @@ import store from './store';
 
 import PrivateRoute from './components/common/PrivateRoute';
 
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
-import Landing from './components/layout/Landing';
+import Navbar from './components/landing-page/Navbar';
+import Footer from './components/landing-page/Footer';
+import Landing from './components/landing-page/Landing';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Dashboard from './components/dashboard/Dashboard';
@@ -25,6 +25,17 @@ import Profile from './components/profile/Profile';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
 import NotFound from './components/not-found/NotFound';
+
+import AssetMangers from './components/information/AssetMangers';
+import Blog from './components/information/Blog';
+import FAQ from './components/information/FAQ';
+import Investors from './components/information/Investors';
+import Team from './components/information/Team';
+import TheProcess from './components/information/TheProcess';
+import WhatsSTO from './components/information/WhatsSTO';
+
+
+
 
 import './App.css';
 
@@ -60,6 +71,21 @@ class App extends Component {
                         <div className="container">
                             <Route exact path="/register" component={Register} />
                             <Route exact path="/login" component={Login} />
+
+
+                            <Route exact path="/assetMangers" component={AssetMangers} />
+                            <Route exact path="/blog" component={Blog} />
+                            <Route exact path="/FAQ" component={FAQ} />
+                            <Route exact path="/investors" component={Investors} />
+                            <Route exact path="/team" component={Team} />
+                            <Route exact path="/theProcess" component={TheProcess} />
+                            <Route exact path="/whatsSTO" component={WhatsSTO} />
+
+
+
+
+
+
                             <Route exact path="/profiles" component={Profiles} />
                             <Route exact path="/profile/:handle" component={Profile} />
                             <Switch>

@@ -62,7 +62,7 @@ class Navbar extends Component {
     );
 
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div className="container">
           <Link className="navbar-brand" to="/">
               CRESTO
@@ -78,12 +78,56 @@ class Navbar extends Component {
 
           <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to="/profiles">
-                  {' '}
-                  Members
-                </Link>
-              </li>
+
+
+                <li className="nav-item">
+                    <Link className="nav-link" to="/assetMangers">
+                        {' '}
+                        Asset Managers
+                    </Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link className="nav-link" to="/blog">
+                        {' '}
+                        Blog
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/FAQ">
+                        {' '}
+                        FAQ
+                    </Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link className="nav-link" to="/investors">
+                        {' '}
+                        Investors
+                    </Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link className="nav-link" to="/team">
+                        {' '}
+                        Team
+                    </Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link className="nav-link" to="/theProcess">
+                        {' '}
+                        The Process
+                    </Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link className="nav-link" to="/whatsSTO">
+                        {' '}
+                        What is STO
+                    </Link>
+                </li>
+
             </ul>
             {isAuthenticated ? authLinks : guestLinks}
           </div>

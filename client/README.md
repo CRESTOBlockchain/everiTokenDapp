@@ -1,7 +1,7 @@
 React client for working with the EveriToken
 
 
-Demo: [Tryit here](https://ottokafka.github.io/everiTokenDapp/)
+Demo: [Tryit here](https://cresto.herokuapp.com/)
 
 
 Developers

@@ -22,7 +22,7 @@ class Landing extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-12 text-center">
-                                    <h1 className="display-3 mb-4">Members Connector</h1>
+                                    <h1 className="display-3 mb-4">CRESTO</h1>
                                     <p className="lead">
                                         {' '}
                                         CRESTO is a fintech solution on real estate investment market. CRESTO platform
@@ -32,12 +32,13 @@ class Landing extends Component {
                                     </p>
                                     <hr/>
 
-                                    <Link to="/register" className="btn btn-lg btn-info mr-2">
-                                        Sign Up
-                                    </Link>
-                                    <Link to="/login" className="btn btn-lg btn-light">
-                                        Login
-                                    </Link>
+                                    {/*<Link to="/register" className="btn btn-lg btn-info mr-2">*/}
+                                        {/*Sign Up*/}
+                                    {/*</Link>*/}
+                                    {/*<Link to="/login" className="btn btn-lg btn-light">*/}
+                                        {/*Login*/}
+                                    {/*</Link>*/}
+
                                 </div>
                             </div>
                         </div>
@@ -45,6 +46,7 @@ class Landing extends Component {
                 </div>
                 <hr/>
                 <hr/>
+
 
 
                 <div className="container">
@@ -63,18 +65,6 @@ class Landing extends Component {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
         );
     }
