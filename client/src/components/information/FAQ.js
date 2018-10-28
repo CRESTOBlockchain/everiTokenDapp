@@ -10,7 +10,7 @@ class FAQ extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 text-center">
-                        <h1>FAQ</h1>
+                        <h1>FAQs</h1>
                             <ul class="list-group">
                             <li class="list-group-item">About CRESTO</li>
                             <li class="list-group-item">Account setting </li>
