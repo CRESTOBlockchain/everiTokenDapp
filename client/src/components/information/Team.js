@@ -3,6 +3,7 @@ import {PropTypes} from 'prop-types';
 import {connect} from 'react-redux';
 import {faHandshake, faWifi} from "@fortawesome/free-solid-svg-icons/index";
 
+
 class Team extends Component {
 
     render() {
