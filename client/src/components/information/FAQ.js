@@ -7,35 +7,22 @@ class FAQ extends Component {
     render() {
         return (
             <div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 text-center">
-                            <h1>FAQ</h1>
-                            <hr/>
-                            <p>About CRESTO
-                                …
-                                …
-                                Account setting
-                                …
-                                …
-                                Risks
-                                …
-                                …
-                                Investing procedure
-                                …
-                                …
-                                STO procedure
-                                …
-                                …
-                                Profitability
-                                …
-                                …</p>
-                            <p>Coming sooner than you know</p>
-
-                        </div>
-
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-12 text-center">
+                        <h1>FAQ</h1>
+                            <ul class="list-group">
+                            <li class="list-group-item">About CRESTO</li>
+                            <li class="list-group-item">Account setting </li>
+                            <li class="list-group-item">   Risks</li>
+                            <li class="list-group-item">Investing procedure </li>
+                            <li class="list-group-item">STO procedure </li>
+                            <li class="list-group-item">  Profitability </li>
+                            </ul>
+                        <p>Coming sooner than you know</p>
                     </div>
                 </div>
+            </div>
             </div>
         );
     }
