@@ -112,7 +112,7 @@ class Landing extends Component {
                                             CRESTO is built on everitoken public blockchain and allows to trade tokens
                                             (being essentially digital securities) on primary and secondary markets.
                                             Safe contract technology is used to regulate asset managers' and investors'
-                                            relations in a transparable and safe way.</p>
+                                            relations in a transferable and safe way.</p>
                                     </div>
                                 </div>
                             </div>
