@@ -23,46 +23,46 @@ class Investors extends Component {
         return (
             <div>
                 <h1 className="display-3 mb-4 text-center">Investors</h1>
-                
+
                 <div className="container">
                     <div className="row">
-                    
+
                         <div ><img src={hq1}/></div>
-                        <div class="div1"><p class="p1">Accredited Individual Investors</p></div>
-                        <div class="div1"><p class="p1">Wealth Managers</p></div>
-                        <div class="div1"><p class="p1">Family Offices</p></div>
-                        <div class="div1"><p class="p1">Venture Funds</p></div>
-                        <div class="div1"><p class="p1">Crypto Currencies Holders</p></div>
-                       
+                        <div className="div1"><p className="p1">Accredited Individual Investors</p></div>
+                        <div className="div1"><p className="p1">Wealth Managers</p></div>
+                        <div className="div1"><p className="p1">Family Offices</p></div>
+                        <div className="div1"><p className="p1">Venture Funds</p></div>
+                        <div className="div1"><p className="p1">Crypto Currencies Holders</p></div>
+
                     </div>
                     <hr/>
 
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12 text-center">
-                            <br/>  
-                            <br/> 
-                            <br/> 
-                            
+                            <br/>
+                            <br/>
+                            <br/>
+
                              <h3>Drawbacks of Existing Investment Solutions<br/><br/></h3>
                             </div>
-                         <br/> 
-                         <br/>  
-                         <br/>  
-                         <br/>                        
+                         <br/>
+                         <br/>
+                         <br/>
+                         <br/>
                         </div>
                     </div>
                 </div>
 
-                
-                 
+
+
                 <table className="display-3 mb-4 text-center">
-                <tr class="table1" style={{backgroundColor:'white', padding:'0', border:'10px'}}>
-                        <td class="x2"></td>
-                        <td class="x1">Direct Investments</td>
-                        <td class="x1">Public REITs</td>
-                        <td class="x1">Private REITs</td>
-                        <td class="x1">Crowd-funding (fiat)</td>
+                <tr className="table1" style={{backgroundColor:'white', padding:'0', border:'10px'}}>
+                        <td className="x2"></td>
+                        <td className="x1">Direct Investments</td>
+                        <td className="x1">Public REITs</td>
+                        <td className="x1">Private REITs</td>
+                        <td className="x1">Crowd-funding (fiat)</td>
                 </tr>
 
                     <tr>
@@ -151,28 +151,28 @@ class Investors extends Component {
                             <div ><img src={arrow}/><p>Opportunity to invest in Core / Core+ assets, which were unavailable for retail investors before</p></div>
                         </div>
                         <br/>
-                       
+
                     </div>
             </div>
 
             <div className="container">
                     <div className="row">
-                        
+
 
                          <div className="col text-center">
-                            <div ><img src={arrow}/><p class="textalign">Wealth managers and family offices  meet the millennials'’ demand for innovative ways of investing</p></div>
+                            <div ><img src={arrow}/><p className="textalign">Wealth managers and family offices  meet the millennials'’ demand for innovative ways of investing</p></div>
                         </div>
                         <div className="col text-center">
-                            <div ><img src={arrow}/><p class="textalign">Crypto currencies holders can diversify their portfolios with asset backed tokens</p></div>
+                            <div ><img src={arrow}/><p className="textalign">Crypto currencies holders can diversify their portfolios with asset backed tokens</p></div>
                         </div>
                         <div className="col text-center">
-                            <div ><img src={arrow}/><p class="textalign">Lower middleman fees</p></div>
+                            <div ><img src={arrow}/><p className="textalign">Lower middleman fees</p></div>
                         </div>
                         <div className="col text-center">
-                            <div ><img src={arrow}/><p class="textalign">Easy and quick investment process</p></div>
+                            <div ><img src={arrow}/><p className="textalign">Easy and quick investment process</p></div>
                         </div>
                         <br/>
-                       
+
                     </div>
             </div>
 

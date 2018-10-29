@@ -114,12 +114,12 @@ class Navbar extends Component {
                     </Link>
                 </li>
 
-                <li className="nav-item">
-                    <Link className="nav-link" to="/theProcess">
-                        {' '}
-                        How the process works
-                    </Link>
-                </li>
+                {/*<li className="nav-item">*/}
+                    {/*<Link className="nav-link" to="/theProcess">*/}
+                        {/*{' '}*/}
+                        {/*How the process works*/}
+                    {/*</Link>*/}
+                {/*</li>*/}
 
                 <li className="nav-item">
                     <Link className="nav-link" to="/whatsSTO">
