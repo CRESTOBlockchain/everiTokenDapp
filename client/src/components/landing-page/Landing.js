@@ -35,7 +35,7 @@ class Landing extends Component {
 
                                 <div className="col-md-12 text-center">
                                     <h1 className="display-3 mb-4">CRESTO</h1>
-                                    <h4>Fintech solution for real estate market which brings together
+                                    <h4>Fintech solution for the real estate market which brings together
                                     </h4>
                                     <hr/>
                                     <hr/>
