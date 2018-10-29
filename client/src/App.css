@@ -9,11 +9,12 @@
     }
     .iconText {
         /*white-space: nowrap;*/
-        width: auto;
-        height: 100px;
+        max-width: 300px;
+        max-height: 160px;
         overflow: hidden;
         text-overflow: ellipsis;
         border: 1px solid #000000;
+        margin: 2%;
     }
     img {
         max-width: 100%;
@@ -35,6 +36,7 @@
 }
 
 @media only screen and (min-width: 500px) {
+
     .iconText {
         /*white-space: nowrap;*/
         width: auto;
@@ -42,6 +44,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         border: 1px solid #000000;
+        margin: 3%;
     }
     .landingIcons {
         margin: 3%;
@@ -71,6 +74,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         border: 1px solid #000000;
+        margin: 4% 6% 4% 6%;
     }
     .landingIcons {
         margin: 4% 6% 4% 6%;
@@ -100,6 +104,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         border: 1px solid #000000;
+        margin: 4% 10% 4% 10%;
     }
     .landingIcons {
         margin: 4% 10% 4% 10%;
