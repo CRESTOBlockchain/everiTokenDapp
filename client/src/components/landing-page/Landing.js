@@ -6,11 +6,14 @@ import {connect} from 'react-redux';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBalanceScale, faHandshake, faWifi} from '@fortawesome/free-solid-svg-icons'
 
+import './css/landing.css';
 
 class Landing extends Component {
+
+    // This checks if user authenticated if yes automatically sends to dashboard - if enabled
     componentDidMount() {
         if (this.props.auth.isAuthenticated) {
-            this.props.history.push('/dashboard');
+            // this.props.history.push('/dashboard');
         }
     }
 

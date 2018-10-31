@@ -11,8 +11,77 @@ class Team extends Component {
             <div>
                 <h1 className="display-3 mb-4 text-center">TEAM</h1>
                 <div className="container">
+                    {/*<div className="card-deck">*/}
+                        {/*<div className="card border-white">*/}
+                            {/*<img className="card-img-top img" src="https://user-images.githubusercontent.com/21117852/47724521-d2372c80-dc91-11e8-8142-6fc4f4ffc5d6.png" alt="Card image cap" style={{maxWidth: "150px", maxHeight: "140px"}}/>*/}
+                            {/*<div className="text-center" style={{background: "#283e4a"}}><h5 style={{color: "white" }}>Mariia Kutkina</h5></div>*/}
+                            {/*<div className="card-body" style={{background: "#D3D3D3"}}>*/}
+                                {/*<ul className='ul'>*/}
+                                    {/*<li className="card-text">Above 10 years of experience in commercial real estate markets in UAE, Spain & Russia;*/}
+                                    {/*</li>*/}
+                                    {/*<li className="card-text">Above 8 years of entrepreneurial experience, 2 startups successfully launched*/}
+                                    {/*</li>*/}
+                                    {/*<li className="card-text">IESE / CEIBS MBA</li>*/}
+                                {/*</ul>*/}
+                            {/*</div>*/}
+                            {/*<div className="text-center" style={{background: "#283e4a"}}><h5 style={{color: "white" }}>Business Strategy</h5></div>*/}
+                        {/*</div>*/}
+
+                        {/*<div className="card border-white ">*/}
+                            {/*<img className="card-img-top img" src="https://user-images.githubusercontent.com/21117852/47724627-06125200-dc92-11e8-8d23-038226e4b3b3.png" alt="Card image cap" style={{maxWidth: "150px", maxHeight: "140px"}}/>*/}
+                            {/*<div className="text-center" style={{background: "#283e4a"}}><h5 style={{color: "white" }}>Mariia Kutkina</h5></div>*/}
+                            {/*<div className="card-body" style={{background: "#D3D3D3"}}>*/}
+                                {/*<ul className='ul'>*/}
+                                    {/*<li className="card-text">Above 10 years of experience in commercial real estate markets in UAE, Spain & Russia*/}
+                                    {/*</li>*/}
+                                    {/*<li className="card-text">Above 8 years of entrepreneurial experience, 2 startups successfully launched*/}
+                                    {/*</li>*/}
+                                    {/*<li className="card-text">IESE / CEIBS MBA</li>*/}
+                                {/*</ul>*/}
+                            {/*</div>*/}
+                            {/*<div className="text-center" style={{background: "#283e4a"}}><h5 style={{color: "white" }}>Business Strategy</h5></div>*/}
+                        {/*</div>*/}
+
+                        {/*<div className="card border-white">*/}
+                            {/*<img className="card-img-top img" src="https://user-images.githubusercontent.com/21117852/47724665-1b877c00-dc92-11e8-884f-0da92fe51510.png" alt="Card image cap" style={{maxWidth: "150px", maxHeight: "140px"}}/>*/}
+                            {/*<div className="text-center" style={{background: "#283e4a"}}><h5 style={{color: "white" }}>Mariia Kutkina</h5></div>*/}
+                            {/*<div className="card-body" style={{background: "#D3D3D3"}} >*/}
+                                {/*<ul className='ul'>*/}
+                                    {/*<li className="card-text">Above 10 years of experience in commercial real estate markets in UAE, Spain & Russia*/}
+                                    {/*</li>*/}
+                                    {/*<li className="card-text">Above 8 years of entrepreneurial experience, 2 startups successfully launched*/}
+                                    {/*</li>*/}
+                                    {/*<li className="card-text">IESE / CEIBS MBA</li>*/}
+                                {/*</ul>*/}
+                            {/*</div>*/}
+                            {/*<div className="text-center" style={{background: "#283e4a"}}><h5 style={{color: "white" }}>Business Strategy</h5></div>*/}
+                        {/*</div>*/}
+
+                        {/*<div className="card border-white">*/}
+                            {/*<img className="card-img-top img" src="https://user-images.githubusercontent.com/21117852/47724665-1b877c00-dc92-11e8-884f-0da92fe51510.png" alt="Card image cap" style={{maxWidth: "150px", maxHeight: "140px"}}/>*/}
+                            {/*<div className="text-center" style={{background: "#283e4a"}}><h5 style={{color: "white" }}>Mariia Kutkina</h5></div>*/}
+                            {/*<div className="card-body" style={{background: "#D3D3D3"}} >*/}
+                                {/*<ul className='ul' >*/}
+                                    {/*<li className="card-text">Above 10 years of experience in commercial real estate markets in UAE, Spain & Russia*/}
+                                    {/*</li>*/}
+                                    {/*<li className="card-text">Above 8 years of entrepreneurial experience, 2 startups successfully launched*/}
+                                    {/*</li>*/}
+                                    {/*<li className="card-text">IESE / CEIBS MBA</li>*/}
+                                {/*</ul>*/}
+                            {/*</div>*/}
+                            {/*<div className="text-center" style={{background: "#283e4a"}}><h5 style={{color: "white" }}>Business Strategy</h5></div>*/}
+                        {/*</div>*/}
+
+                    {/*</div>*/}
+
+
+
+
+
                     <div className="d-flex flex-wrap">
+
                         <div className=" text-center" >
+
                             <img src='https://user-images.githubusercontent.com/21117852/47626168-be41dc80-db64-11e8-8b0e-40f71bc09495.png'/>
                         </div>
                         <div className=" text-center">
@@ -41,16 +110,7 @@ class Team extends Component {
                 </div>
                 <hr/>
 
-                <div className="container">
-                    <div className="row">
-                        <div className="col text-center" >
-                            <img src=''/>
-                        </div>
-                        <div className="col text-center">
-                            <img src=''/>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         );
     }
