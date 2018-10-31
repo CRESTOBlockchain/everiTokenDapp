@@ -17,8 +17,8 @@ class AssetMangers extends Component {
                     <div className="col-sm-2"></div>
                     <div className="col-sm-8">
 
-                        <nav className="navbar navbar-light bg-light">
-  <span className="navbar-text">
+                        <nav className="navbar navbar-light bg-light AMbg-light AMnavbar-light">
+  <span className=" navbar-text AMnavbar-text">
 
    STO for Real Estate Asset Managers and Owners
                                  Our Base Principles
@@ -28,11 +28,11 @@ class AssetMangers extends Component {
                     <div className="col-sm-2"></div>
                 </div>
 
-                <div className="row custom-card-body">
+                <div className="row custom-card-body AMcustom-card-body">
                     <div className="col-sm-3">
 
                         <div className="card">
-                            <div className="card-body">
+                            <div className="card-body AMcard-body">
 
                                 <p className="card-text">Seamless integration with existing financial processes
                                 </p>
@@ -42,7 +42,7 @@ class AssetMangers extends Component {
                     <div className="col-sm-3">
 
                         <div className="card">
-                            <div className="card-body">
+                            <div className="card-body AMcard-body">
 
                                 <p className="card-text">STO underlying principles comply with regulations on traditional securities market
                                 </p>
@@ -52,7 +52,7 @@ class AssetMangers extends Component {
                     <div className="col-sm-3">
 
                         <div className="card">
-                            <div className="card-body">
+                            <div className="card-body AMcard-body">
 
                                 <p className="card-text">Active cooperation with relevant financial and legal authorities in order to boost development of STO regulations
 
@@ -66,7 +66,7 @@ class AssetMangers extends Component {
                     <div className="col-sm-3">
 
                         <div className="card">
-                            <div className="card-body">
+                            <div className="card-body AMcard-body">
 
 
                                 <p className="card-text">STechnology is there to serve existing business models on real estate market, not to disrupt them
@@ -80,20 +80,20 @@ class AssetMangers extends Component {
                 <hr/>
 
 
-                <div className="rectangleBar">
+                <div className="rectangleBar AMrectangleBar">
 
 
                     <div className="row">
 
                         <div className="col-sm-2">
-                            <div className="rectangle">
+                            <div className="rectangle AMrectangle">
                                 Asset Managers / Owners
                             </div>
 
                         </div>
 
                         <div className="col-sm-2">
-                            <div className="oval">
+                            <div className="oval AMoval">
                                 <p className="ovalparagraph"> Private REITs </p>
 
                             </div>
@@ -101,20 +101,20 @@ class AssetMangers extends Component {
 
 
                         <div className="col-sm-2">
-                            <div className="oval">
+                            <div className="oval AMoval">
                                 <p className="ovalparagraph">Private Equity </p>
                             </div>
                         </div>
 
                         <div className="col-sm-2">
-                            <div className="oval">
+                            <div className="oval AMoval">
                                 <p className="ovalparagraph">Developers </p>
 
                             </div>
                         </div>
 
                         <div className="col-sm-2">
-                            <div className="oval">
+                            <div className="oval AMoval">
                                 <p className="ovalparagraph"> Individual asset
                                 </p>
                             </div>
@@ -127,13 +127,13 @@ class AssetMangers extends Component {
 
                 <hr/>
 
-                <div className="rectangleBar">
+                <div className="rectangleBar AMrectangleBar">
 
 
                     <div className="row">
 
                         <div className="col-sm-3">
-                            <div className="rectangle">
+                            <div className="rectangle AMrectangle">
                                 Existing Pains
                             </div>
 
@@ -170,13 +170,13 @@ class AssetMangers extends Component {
                 <hr/>
 
 
-                <div className="rectangleBar">
+                <div className="rectangleBar AMrectangleBar">
 
 
                     <div className="row">
 
                         <div className="col-sm-3">
-                            <div className="rectangle">
+                            <div className="rectangle AMrectangle">
                                 Solutions through STO
 
                             </div>
@@ -240,8 +240,8 @@ class AssetMangers extends Component {
                     <div className="col-sm-1"></div>
                     <div className="col-sm-10">
 
-                        <div className="myNavbar">
-  <span className="navbar-text">
+                        <div className="myNavbar AMmyNavbar">
+  <span className=" navbar-text AMnavbar-text">
 
    Who Are Eligible Candidates for Holding STO</span>
                         </div>
@@ -268,8 +268,8 @@ class AssetMangers extends Component {
                     <div className="col-sm-1"></div>
                     <div className="col-sm-10">
 
-                        <div className="myNavbar">
-  <span className="navbar-text">
+                        <div className="myNavbar AMmyNavbar">
+  <span className=" navbar-text AMnavbar-text">
 
     Expected Criteria for Real Estate Assets Submitted for Securitization</span>
                         </div>

@@ -1,0 +1,13 @@
+.teamBorderSize {
+    min-width: 240px;
+    max-width: 240px;
+}
+
+.teamImgSize {
+    max-width: 150px;
+    max-height: 140px;
+}
+.teamColors{
+    background: #283e4a;
+    color: white;
+}

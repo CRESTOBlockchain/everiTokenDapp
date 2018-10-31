@@ -1,16 +1,4 @@
 
-
-.whatsSTOpage {
-    position: relative;
-    background: url('https://user-images.githubusercontent.com/21117852/47595124-35cf0a80-d9b1-11e8-9e5b-a4fd3bd874fc.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    margin-top: -24px;
-    margin-bottom: -50px;
-}
-
-
 .card-form {
     opacity: 0.9;
 }
