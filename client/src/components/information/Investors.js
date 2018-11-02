@@ -22,7 +22,7 @@ class Investors extends Component {
     render() {
         return (
             <div>
-                <h1 className="display-3 mb-4 text-center">Investors</h1>
+                <h1 className="display-3 mb-4 text-center"></h1>
 
                 <div className="container">
                     <div className="row">
