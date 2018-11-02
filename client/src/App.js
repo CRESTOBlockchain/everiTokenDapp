@@ -36,7 +36,6 @@ import WhatsSTO from './components/information/WhatsSTO';
 // import ImgUploader from './components/edit-profile/ImgUploader';
 
 
-
 import './App.css';
 
 // Check for token
