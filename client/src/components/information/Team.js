@@ -143,7 +143,6 @@ class Team extends Component {
 
 
 
-
                 </div>
                 <hr/>
 
