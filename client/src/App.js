@@ -33,7 +33,7 @@ import Investors from './components/information/Investors';
 import Team from './components/information/Team';
 import TheProcess from './components/information/TheProcess';
 import WhatsSTO from './components/information/WhatsSTO';
-import ImgUploader from './components/edit-profile/ImgUploader';
+// import ImgUploader from './components/edit-profile/ImgUploader';
 
 
 
@@ -80,7 +80,7 @@ class App extends Component {
                             <Route exact path="/team" component={Team} />
                             <Route exact path="/theProcess" component={TheProcess} />
                             <Route exact path="/whatsSTO" component={WhatsSTO} />
-                            <Route exact path="/imgUploader" component={ImgUploader} />
+                            {/*<Route exact path="/imgUploader" component={ImgUploader} />*/}
 
 
 
