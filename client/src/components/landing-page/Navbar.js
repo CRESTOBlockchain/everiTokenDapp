@@ -48,16 +48,16 @@ class Navbar extends Component {
 
     const guestLinks = (
       <ul className="navbar-nav ml-auto">
-        <li className="nav-item">
-          <Link className="nav-link" to="/register">
-            Sign Up
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/login">
-            Login
-          </Link>
-        </li>
+        {/*<li className="nav-item">*/}
+          {/*<Link className="nav-link" to="/register">*/}
+            {/*Sign Up*/}
+          {/*</Link>*/}
+        {/*</li>*/}
+        {/*<li className="nav-item">*/}
+          {/*<Link className="nav-link" to="/login">*/}
+            {/*Login*/}
+          {/*</Link>*/}
+        {/*</li>*/}
       </ul>
     );
 
@@ -80,32 +80,32 @@ class Navbar extends Component {
             <ul className="navbar-nav mr-auto">
 
 
-                <li className="nav-item">
-                    <Link className="nav-link" to="/assetMangers">
-                        {' '}
-                        Asset Managers
-                    </Link>
-                </li>
+                {/*<li className="nav-item">*/}
+                    {/*<Link className="nav-link" to="/assetMangers">*/}
+                        {/*{' '}*/}
+                        {/*Asset Managers*/}
+                    {/*</Link>*/}
+                {/*</li>*/}
 
-                <li className="nav-item">
-                    <Link className="nav-link" to="/blog">
-                        {' '}
-                        Blog
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/FAQ">
-                        {' '}
-                        FAQ
-                    </Link>
-                </li>
+                {/*<li className="nav-item">*/}
+                    {/*<Link className="nav-link" to="/blog">*/}
+                        {/*{' '}*/}
+                        {/*Blog*/}
+                    {/*</Link>*/}
+                {/*</li>*/}
+                {/*<li className="nav-item">*/}
+                    {/*<Link className="nav-link" to="/FAQ">*/}
+                        {/*{' '}*/}
+                        {/*FAQ*/}
+                    {/*</Link>*/}
+                {/*</li>*/}
 
-                <li className="nav-item">
-                    <Link className="nav-link" to="/investors">
-                        {' '}
-                        Investors
-                    </Link>
-                </li>
+                {/*<li className="nav-item">*/}
+                    {/*<Link className="nav-link" to="/investors">*/}
+                        {/*{' '}*/}
+                        {/*Investors*/}
+                    {/*</Link>*/}
+                {/*</li>*/}
 
                 <li className="nav-item">
                     <Link className="nav-link" to="/team">
@@ -121,12 +121,12 @@ class Navbar extends Component {
                     {/*</Link>*/}
                 {/*</li>*/}
 
-                <li className="nav-item">
-                    <Link className="nav-link" to="/whatsSTO">
-                        {' '}
-                        What is STO
-                    </Link>
-                </li>
+                {/*<li className="nav-item">*/}
+                    {/*<Link className="nav-link" to="/whatsSTO">*/}
+                        {/*{' '}*/}
+                        {/*What is STO*/}
+                    {/*</Link>*/}
+                {/*</li>*/}
 
             </ul>
             {isAuthenticated ? authLinks : guestLinks}

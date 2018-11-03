@@ -59,53 +59,6 @@ class Team extends Component {
 
 
 
-                <div className=" d-flex justify-content-center flex-wrap">
-
-                    <div className="member">
-                        <div className="member-cover"><img
-                            src="https://user-images.githubusercontent.com/21117852/47821034-4957e800-dd9a-11e8-87b1-8d6ff4332595.png"
-                            alt="Kosta Kantchev" className="member-photo"/> <a
-                            target="_blank" href='https://www.linkedin.com/in/leesky/'
-                            className="member-linkedin"> <FontAwesomeIcon icon={faLinkedinIn} size="1x"/></a></div>
-                        <h2 className="h2">Sky Li</h2><span className="member-jobtitle">Product & operation </span>
-                        <div className="member-bio"><p>Serial entrepreneur, founded 2 startups during 2014-2018
-                            Experience of orchestration from product development to operation
-                            Prior startup life, had 9 years of talent function across digital media, tech & startup spaces</p>
-                        </div>
-                    </div>
-                    <div className=" member">
-                        <div className="member-cover"><img
-                            src="https://user-images.githubusercontent.com/21117852/47821058-6391c600-dd9a-11e8-87d3-abe905a2c961.png"
-                            alt="Kosta Kantchev" className="member-photo"/> <a
-                            target="_blank" href='https://www.linkedin.com/in/joe-santiago-484166170/'
-                            className="member-linkedin"> <FontAwesomeIcon icon={faLinkedinIn} size="1x"/></a></div>
-                        <h2 className="h2">Joe Santiago</h2>
-                        <span className="member-jobtitle">
-                           Marketing </span>
-                        <div className="member-bio"><p>Serial entrepreneur & marketer with more than 10 years experiences in Asian & international market
-                            CMO/COO of Laplace network, Cofounder AGE Blockchain Art Appraisal
-                            Former COO of Tian Yuan Fang Real Estate & Resorts</p>
-                        </div>
-                    </div>
-
-                    <div className=" member">
-                        <div className="member-cover"><img
-                            src="https://user-images.githubusercontent.com/21117852/47821083-76a49600-dd9a-11e8-864e-632bc5cad147.png"
-                            alt="Kosta Kantchev" className="member-photo"/> <a
-                            target="_blank" href='https://www.linkedin.com/in/mark-perry-b268a744/'
-                            className="member-linkedin"> <FontAwesomeIcon icon={faLinkedinIn} size="1x"/></a></div>
-                        <h2 className="h2">Mark Perry</h2>
-                        <span className="member-jobtitle">
-                            Partnership </span>
-                        <div className="member-bio"><p>London CASS MSc in Economics and Finance
-                            7 years experience in Private Equity & Asset Management offshore oil & gas, logistic & trading
-                            Cofounder of AGE Blockchain art appraisal
-                        </p>
-                        </div>
-                    </div>
-                </div>
-
-
 
                 <div className=" d-flex justify-content-center flex-wrap">
 
@@ -121,17 +74,18 @@ class Team extends Component {
                             Holds degrees in computer engineering, computer science and electronics & biotechnology</p>
                         </div>
                     </div>
-                    <div className=" member">
-                        <div className="member-cover"><img
-                            src="https://user-images.githubusercontent.com/21117852/47821133-a358ad80-dd9a-11e8-851a-1e4934ea7418.png"
-                            alt="Kosta Kantchev" className="member-photo"/> <a
-                            target="_blank" href='https://linkedin.com/in/amjadkhan5191'
-                            className="member-linkedin"> <FontAwesomeIcon icon={faLinkedinIn} size="1x"/></a></div>
-                        <h2 className="h2">Amjad Gul</h2><span className="member-jobtitle">  Technology </span>
-                        <div className="member-bio"><p>2 years plus experience in software technology industry
-                            Backend developer with experience in frontend as well</p>
-                        </div>
-                    </div>
+
+                    {/*<div className=" member">*/}
+                        {/*<div className="member-cover"><img*/}
+                            {/*src="https://user-images.githubusercontent.com/21117852/47821133-a358ad80-dd9a-11e8-851a-1e4934ea7418.png"*/}
+                            {/*alt="Kosta Kantchev" className="member-photo"/> <a*/}
+                            {/*target="_blank" href='https://linkedin.com/in/amjadkhan5191'*/}
+                            {/*className="member-linkedin"> <FontAwesomeIcon icon={faLinkedinIn} size="1x"/></a></div>*/}
+                        {/*<h2 className="h2">Amjad Gul</h2><span className="member-jobtitle">  Technology </span>*/}
+                        {/*<div className="member-bio"><p>2 years plus experience in software technology industry*/}
+                            {/*Backend developer with experience in frontend as well</p>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
 
                     <div className=" member">
                         <div className="member-cover"><img
