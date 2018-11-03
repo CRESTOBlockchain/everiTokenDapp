@@ -12,6 +12,10 @@
     color: white;
 }
 
+@media only screen and (min-width: 320px) {
+
+}
+
 
 .member {
     margin: 3%;
