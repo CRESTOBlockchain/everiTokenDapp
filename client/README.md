@@ -1,7 +1,7 @@
 React client for working with the EveriToken
 
 
-Demo: [Tryit here](https://cresto.herokuapp.com/)
+Demo: [Tryit here](https://everitoken-dapp.herokuapp.com/)
 
 
 Developers
