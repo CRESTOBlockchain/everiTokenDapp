@@ -2,10 +2,8 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {PropTypes} from 'prop-types';
 import {connect} from 'react-redux';
-
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faBalanceScale, faHandshake, faWifi} from '@fortawesome/free-solid-svg-icons'
-
+import {faUserShield, faMoneyCheck, faMoneyBill, faWarehouse,faCode, faHourglass, faCoffee, faHandsHelping, faBriefcase} from '@fortawesome/free-solid-svg-icons'
 import './css/landing.css';
 
 class Landing extends Component {
@@ -20,89 +18,104 @@ class Landing extends Component {
     render() {
         return (
             <div>
-                <div className="landing">
 
-                    <div className="dark-overlay landing-inner text-light">
-
-                        <div className="container">
-                            <div className="row">
-                                <div className='col-md-12'>
-                                    {/*<a href="https://github.com/CRESTOBlockchain/everiTokenDapp/raw/master/client/src/docs/CRESTO%20Presentation.pdf"*/}
-                                       {/*download="proposed_file_name">*/}
-                                        {/*<button className='btn btn-danger downloadBrochure' style={{float: "right"}}>Download Brochure</button>*/}
-                                    {/*</a>*/}
-                                </div>
-                            </div>
-                            <div className="row">
-
-                                <div className="col-md-12 text-center">
-                                    <h1 className="display-3 mb-4">EveriToken Dapp</h1>
-                                    <h4>EveriToken Dapp to improve the world:
-                                    </h4>
-                                    <hr/>
-                                    <hr/>
-                                    <p>Or hack it</p>
-
-                                    {/*<Link to="/register" className="btn btn-lg btn-info mr-2">*/}
-                                    {/*Sign Up*/}
-                                    {/*</Link>*/}
-                                    {/*<Link to="/login" className="btn btn-lg btn-light">*/}
-                                    {/*Login*/}
-                                    {/*</Link>*/}
+                <section className="home bg-img-1 parallax" data-stellar-background-ratio="0.5">
+                    <div className="bg-overlay"></div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-12">
+                                <div className="home-wrapper text-center">
+                                    <h1 className="animated fadeInDown wow" data-wow-delay=".1s">A more efficient real
+                                        estate market</h1>
+                                    <p className="animated fadeInDown wow" data-wow-delay=".2s">Instead of middle man
+                                        selling space we build a tokenized marketplace that will create a more liquid real estate market.</p>
+                                    <p> Each project/building will have the ability to be bought with everiTokens.</p>
+                                    <a href="dashboard/real-estate-broker.html"
+                                       className="btn btn-primary btn-rounded w-lg animated fadeInDown wow"
+                                       data-wow-delay=".4s">Use the platform</a>
+                                    <div className="clearfix"></div>
 
                                 </div>
-                            </div>
-                            <div className="row">
-                                <div className='col text-center'>
-                                    <h4> </h4>
-                                </div>
-                                <div className='col text-center'>
-                                    <h4>
-
-                                    </h4>
-                                </div>
-                            </div>
-
-
-                            <div className="row">
-                                <div className='col text-center'>
-                                    <p className='lead'>
-
-                                    </p>
-                                </div>
-                                <div className='col text-center'>
-                                    <p className='lead'>
-
-                                    </p>
-                                </div>
-                            </div>
-
-                            <hr/>
-
-                                {/*<div className="d-flex justify-content-center flex-wrap">*/}
-                                    {/*<div className="text-center iconDiv">*/}
-                                        {/*<FontAwesomeIcon icon={faBalanceScale} size="3x" />*/}
-                                        {/*<h6>Full legal compliance</h6>*/}
-                                        {/*<p className="small border border-light" style={{minHeight: "154px"}}>*/}
-                                            {/**/}
-                                        {/*</p>*/}
-                                    {/*</div>*/}
-                                    {/*<div className="text-center iconDiv">*/}
-                                        {/*<FontAwesomeIcon icon={faHandshake} size="3x" />*/}
-                                        {/*<h6>Cooperation instead of “disruption”</h6>*/}
-                                        {/*<p className="small border border-light" style={{minHeight: "154px"}} >*/}
-                                            {/**/}
-                                        {/*</p>*/}
-                                    {/*</div>*/}
-                                    {/*<div className="text-center iconDiv">*/}
-                                        {/*<FontAwesomeIcon icon={faWifi} size="3x"/><h6>Advantages through technology</h6>*/}
-                                        {/*<p className="small border border-light" style={{minHeight: "154px"}}>Asset holders and retail investors are offered alternative way to connect - through CRESTO platform. CRESTO is built on Ethereum public blockchain and allows to trade tokens (being essentially digital securities) on primary and secondary markets. Smart contract technology is used to regulate asset managers' and investors' relations in a transparent and safe way.</p>*/}
-                                    {/*</div>*/}
-                                {/*</div>*/}
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <section className="section" id="how-it-work">
+                    <div className="container">
+
+                        <div className="row">
+                            <div className="col-sm-12 text-center">
+                                <h2 className="title zoomIn animated wow" data-wow-delay=".1s">How It Works ?</h2>
+                                <p className="sub-title zoomIn animated wow" data-wow-delay=".2s">Destate lets you
+                                    easily create digital secure assets of lease contracts. It does this by using the
+                                    power of blockchain, with a combination of <a href="https://www.everitoken.io/"
+                                                                                      target="_blank">Everitoken</a></p>
+                            </div>
+                        </div>
+
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="service-item animated fadeInLeft wow" data-wow-delay=".1s">
+                                    <FontAwesomeIcon icon={faUserShield} size='2x'/>
+
+
+                                    <div className="service-detail">
+                                        <h4>Ultra secure</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-4">
+                                <div className="service-item animated fadeInDown wow" data-wow-delay=".3s">
+                                    <FontAwesomeIcon icon={faMoneyBill} size='2x'/>
+                                    <div className="service-detail">
+                                        <h4>Safes loads of costs</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-4">
+                                <div className="service-item animated fadeInRight wow" data-wow-delay=".5s">
+                                    <FontAwesomeIcon icon={faWarehouse} size='2x'/>
+                                    <div className="service-detail">
+                                        <h4>A more efficient real estate market</h4>
+                                    </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                </section>
+
+                <section className="fun-facts bg-img-2 parallax" data-stellar-background-ratio="0.5">
+                    <div className="bg-overlay"></div>
+                    <div className="container">
+
+                        <div className="row text-center">
+                            <div className="col-md-3 col-sm-3 facts">
+                                <FontAwesomeIcon icon={faCode} size='2x'/>
+                                <h1><span className="counter">6577</span> k</h1>
+                                <h4>Lines Coded</h4>
+                            </div>
+                            <div className="col-md-3 col-sm-3 facts">
+                                <FontAwesomeIcon icon={faHourglass} size='2x'/>
+                                <h1><span className="counter">7800</span> +</h1>
+                                <h4>Working Hours</h4>
+                            </div>
+                            <div className="col-md-3 col-sm-3 facts">
+                                <FontAwesomeIcon icon={faCoffee} size='2x'/>
+                                <h1 className="counter">399</h1>
+                                <h4>No. Of offices</h4>
+                            </div>
+                            <div className="col-md-3 col-sm-3 facts">
+                                <FontAwesomeIcon icon={faHandsHelping} size='2x'/>
+                                <h1 className="counter">9995</h1>
+                                <h4>Leasers helped</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         );
     }
 }

@@ -65,7 +65,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div className="container">
           <Link className="navbar-brand" to="/">
-              CRESTO
+              D-estate
           </Link>
           <button
             className="navbar-toggler"

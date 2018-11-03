@@ -50,7 +50,6 @@ class Team extends Component {
                         <div className="member-bio"><p>Above 10 years of entrepreneurial experience in the tech industry
                             Full stack developer with mastery of React, Node JS, Express. JS, and MongoDB
                             Successfully launched projects in California, Beijing, Shanghai, & Shenzhen
-
                         </p>
                         </div>
                     </div>
