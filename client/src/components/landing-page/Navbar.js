@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
 import { clearCurrentProfile } from '../../actions/profileActions';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faPhone, faPaperclip} from '@fortawesome/free-solid-svg-icons'
+import {faGithub} from '@fortawesome/free-brands-svg-icons'
 
 class Navbar extends Component {
   onLogoutClick(e) {
@@ -62,7 +65,30 @@ class Navbar extends Component {
     );
 
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div>
+            <div className="tagline">
+                <div className="container">
+                    <div className="float-left">
+                        <div className="phone">
+                           <FontAwesomeIcon icon={faPhone}/> +1 800 123 45 67
+                        </div>
+                        <div className="email">
+                            <a href="mailto:#">
+                                <FontAwesomeIcon icon={faPaperclip}/> info@destate.com
+                            </a>
+                        </div>
+                    </div>
+                    <div className="float-right">
+                        <ul className="top_socials">
+                            <li><a href="https://github.com/CRESTOBlockchain/everiTokenDapp"
+                                   target="_blank"> <FontAwesomeIcon icon={faGithub}/></a></li>
+                        </ul>
+                    </div>
+                    <div className="clearfix"></div>
+                </div>
+            </div>
+
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
         <div className="container">
           <Link className="navbar-brand" to="/">
               D-estate
@@ -133,6 +159,7 @@ class Navbar extends Component {
           </div>
         </div>
       </nav>
+        </div>
     );
   }
 }
