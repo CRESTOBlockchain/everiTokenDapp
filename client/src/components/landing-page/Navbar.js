@@ -74,7 +74,7 @@ class Navbar extends Component {
                         </div>
                         <div className="email">
                             <a href="mailto:#">
-                                <FontAwesomeIcon icon={faPaperclip}/> info@destate.com
+                                <FontAwesomeIcon icon={faPaperclip}/> info@degron.io
                             </a>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
         <div className="container">
           <Link className="navbar-brand" to="/">
-              D-estate
+              Degron
           </Link>
           <button
             className="navbar-toggler"
