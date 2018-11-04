@@ -65,13 +65,9 @@ class App extends Component {
                             <Route exact path="/login" component={Login} />
 
 
-                            <Route exact path="/assetMangers" component={AssetMangers} />
-                            <Route exact path="/blog" component={Blog} />
-                            <Route exact path="/FAQ" component={FAQ} />
-                            <Route exact path="/investors" component={Investors} />
+
                             <Route exact path="/team" component={Team} />
-                            <Route exact path="/theProcess" component={TheProcess} />
-                            <Route exact path="/whatsSTO" component={WhatsSTO} />
+
                             {/*<Route exact path="/imgUploader" component={ImgUploader} />*/}
 
 
