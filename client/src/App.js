@@ -26,14 +26,7 @@ import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
 import NotFound from './components/not-found/NotFound';
 
-import AssetMangers from './components/information/AssetMangers';
-import Blog from './components/information/Blog';
-import FAQ from './components/information/FAQ';
-import Investors from './components/information/Investors';
 import Team from './components/information/Team';
-import TheProcess from './components/information/TheProcess';
-import WhatsSTO from './components/information/WhatsSTO';
-// import ImgUploader from './components/edit-profile/ImgUploader';
 
 
 import './App.css';

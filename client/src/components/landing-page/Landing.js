@@ -46,7 +46,7 @@ class Landing extends Component {
                         <div className="row">
                             <div className="col-sm-12 text-center">
                                 <h2 className="title zoomIn animated wow" data-wow-delay=".1s">How It Works ?</h2>
-                                <h4 className="sub-title zoomIn animated wow" data-wow-delay=".2s">D-estate lets you
+                                <h4 className="sub-title zoomIn animated wow" data-wow-delay=".2s">Degron lets you
                                     easily create digital secure assets of lease contracts. It does this by using the
                                     power of blockchain, with a combination of <a href="https://www.everitoken.io/"
                                                                                       target="_blank">Everitoken</a></h4>
