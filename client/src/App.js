@@ -61,15 +61,21 @@ class App extends Component {
                     <div className="App">
                         {/*<Navbar />*/}
 
+
                         <Route exact path="/" component={Landing} />
+                        <Route exact path="/team" component={Team} />
+                        <Route exact path="/RealEstateBroker" component={RealEstateBroker}/>
+
+
+
                         <div className="container">
                             <Route exact path="/register" component={Register} />
                             <Route exact path="/login" component={Login} />
 
 
 
-                            <Route exact path="/team" component={Team} />
-                            <Route exact path="/RealEstateBroker" component={RealEstateBroker}/>
+
+
                             {/*<Route exact path="/imgUploader" component={ImgUploader} />*/}
 
 

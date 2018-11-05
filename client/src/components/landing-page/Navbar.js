@@ -153,7 +153,12 @@ class Navbar extends Component {
                         {/*What is STO*/}
                     {/*</Link>*/}
                 {/*</li>*/}
-
+                <li className="nav-item">
+                    <Link className="nav-link" to="RealEstateBroker">
+                        {' '}
+                        Dashboard
+                    </Link>
+                </li>
             </ul>
             {isAuthenticated ? authLinks : guestLinks}
           </div>

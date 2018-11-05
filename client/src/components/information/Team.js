@@ -11,7 +11,7 @@ class Team extends Component {
     render() {
         return (
             <div>
-<Navbar />
+<Navbar/>
 
                 <div className=" d-flex justify-content-center flex-wrap">
 
