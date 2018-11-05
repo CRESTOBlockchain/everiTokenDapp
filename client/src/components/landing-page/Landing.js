@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faUserShield, faMoneyCheck, faMoneyBill, faWarehouse,faCode, faHourglass, faCoffee, faHandsHelping, faBriefcase} from '@fortawesome/free-solid-svg-icons'
 import './css/landing.css';
+import Navbar from '../landing-page/Navbar'
 
 class Landing extends Component {
 
@@ -18,6 +19,9 @@ class Landing extends Component {
     render() {
         return (
             <div>
+<Navbar/>
+
+
 
                 <section className="home bg-img-1 parallax" data-stellar-background-ratio="0.5">
                     <div className="bg-overlay"></div>
@@ -30,9 +34,18 @@ class Landing extends Component {
                                     <p className="animated fadeInDown wow" data-wow-delay=".2s">Instead of middle man
                                         selling space we build a tokenized marketplace that will create a more liquid real estate market.</p>
                                     <p> Each project/building will have the ability to be bought with everiTokens.</p>
-                                    <a href="dashboard/real-estate-broker.html"
-                                       className="btn btn-primary btn-rounded w-lg animated fadeInDown wow"
-                                       data-wow-delay=".4s">Use the platform</a>
+
+                                    {/*<Link className="nav-link" to="/assetMangers">*/}
+                                    {/*{' '}*/}
+                                    {/*Asset Managers*/}
+                                    {/*</Link>*/}
+                                    <Link className='btn btn-primary btn-rounded w-lg animated fadeInDown wow' to="RealEstateBroker">
+                                        Use the Platform
+                                    </Link>
+
+                                    {/*<a href="dashboard/real-estate-broker.html"*/}
+                                       {/*className="btn btn-primary btn-rounded w-lg animated fadeInDown wow"*/}
+                                       {/*data-wow-delay=".4s">Use the platform</a>*/}
                                     <div className="clearfix"></div>
 
                                 </div>

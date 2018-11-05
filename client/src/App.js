@@ -27,6 +27,7 @@ import Post from './components/post/Post';
 import NotFound from './components/not-found/NotFound';
 
 import Team from './components/information/Team';
+import RealEstateBroker from './components/platform/RealEstateBroker';
 
 
 import './App.css';
@@ -58,7 +59,8 @@ class App extends Component {
             <Provider store={store}>
                 <Router>
                     <div className="App">
-                        <Navbar />
+                        {/*<Navbar />*/}
+
                         <Route exact path="/" component={Landing} />
                         <div className="container">
                             <Route exact path="/register" component={Register} />
@@ -67,7 +69,7 @@ class App extends Component {
 
 
                             <Route exact path="/team" component={Team} />
-
+                            <Route exact path="/RealEstateBroker" component={RealEstateBroker}/>
                             {/*<Route exact path="/imgUploader" component={ImgUploader} />*/}
 
 

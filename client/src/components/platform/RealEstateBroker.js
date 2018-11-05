@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {PropTypes} from 'prop-types';
 import {connect} from 'react-redux';
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-// import {faUserShield, faMoneyCheck, faMoneyBill, faWarehouse,faCode, faHourglass, faCoffee, faHandsHelping, faBriefcase} from '@fortawesome/free-solid-svg-icons'
-// import './css/landing.css';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faHome, faChartLine, faMapSigns, faUserFriends} from '@fortawesome/free-solid-svg-icons'
+import Sidebar from './Sidebar';
+import Navbar from './Navbar2'
+import './css/sidebar.css';
 
 class RealEstateBroker extends Component {
 
@@ -18,186 +20,165 @@ class RealEstateBroker extends Component {
     render() {
         return (
             <div>
-                <div id="wrapper">
-
-                    <div className="topbar">
-
-                        <!-- LOGO -->
-                        <div className="topbar-left">
-                            <div className="text-center">
-                                <a href="#"><img className="navbar-brand logo"
-                                                 src="assets/images/chain-estate-dark.png"/></a>
-                            </div>
-                        </div>
-                        <nav className="navbar-custom">
-
-                            <ul className="list-inline float-right mb-0">
-
-                                <li className="list-inline-item notification-list hide-phone">
-                                    <a className="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
-                                        <i className="mdi mdi-crop-free noti-icon"></i>
-                                    </a>
-                                </li>
-
-                                <li className="list-inline-item notification-list">
-                                    <a className="nav-link right-bar-toggle waves-light waves-effect" href="#">
-                                        <i className="mdi mdi-dots-horizontal noti-icon"></i>
-                                    </a>
-                                </li>
-
-                                <li className="list-inline-item dropdown notification-list">
-                                    <a className="nav-link dropdown-toggle arrow-none waves-light waves-effect"
-                                       data-toggle="dropdown" href="#" role="button"
-                                       aria-haspopup="false" aria-expanded="false">
-                                        <i className="mdi mdi-bell noti-icon"></i>
-                                        <span className="badge badge-pink noti-icon-badge">4</span>
-                                    </a>
-                                    <div className="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg"
-                                         aria-labelledby="Preview">
-
-                                        <div className="dropdown-item noti-title">
-                                            <h5 className="font-16"><span
-                                                className="badge badge-danger float-right">5</span>Notification</h5>
-                                        </div>
-
-                                        <a href="javascript:void(0);" className="dropdown-item notify-item">
-                                            <div className="notify-icon bg-success"><i
-                                                className="mdi mdi-comment-account"></i></div>
-                                            <p className="notify-details">Robert S. Taylor commented on Admin
-                                                <small className="text-muted">1 min ago</small>
-                                            </p>
-                                        </a>
-
-                                        <a href="javascript:void(0);" className="dropdown-item notify-item">
-                                            <div className="notify-icon bg-info"><i className="mdi mdi-account"></i>
-                                            </div>
-                                            <p className="notify-details">New user registered.
-                                                <small className="text-muted">1 min ago</small>
-                                            </p>
-                                        </a>
-
-                                        <a href="javascript:void(0);" className="dropdown-item notify-item">
-                                            <div className="notify-icon bg-danger"><i className="mdi mdi-airplane"></i>
-                                            </div>
-                                            <p className="notify-details">Carlos Crouch liked <b>Admin</b>
-                                                <small className="text-muted">1 min ago</small>
-                                            </p>
-                                        </a>
-
-                                        <a href="javascript:void(0);" className="dropdown-item notify-item notify-all">
-                                            View All
-                                        </a>
-
-                                    </div>
-                                </li>
-
-                                <li className="list-inline-item dropdown notification-list">
-                                    <a className="nav-link dropdown-toggle waves-effect waves-light nav-user"
-                                       data-toggle="dropdown" href="#" role="button"
-                                       aria-haspopup="false" aria-expanded="false">
-                                        <img src="assets/images/users/avatar-1.jpg" alt="user"
-                                             className="rounded-circle"/>
-                                    </a>
-                                    <div className="dropdown-menu dropdown-menu-right profile-dropdown "
-                                         aria-labelledby="Preview">
-                                        <!-- item-->
-                                        <div className="dropdown-item noti-title">
-                                            <h5 className="text-overflow">
-                                                <small>Welcome ! John</small>
-                                            </h5>
-                                        </div>
-
-                                        <a href="javascript:void(0);" className="dropdown-item notify-item">
-                                            <i className="mdi mdi-account"></i> <span>Profile</span>
-                                        </a>
-
-                                        <a href="javascript:void(0);" className="dropdown-item notify-item">
-                                            <i className="mdi mdi-settings"></i> <span>Settings</span>
-                                        </a>
-
-                                        <a href="javascript:void(0);" className="dropdown-item notify-item">
-                                            <i className="mdi mdi-lock-open"></i> <span>Lock Screen</span>
-                                        </a>
-
-                                        <a href="javascript:void(0);" className="dropdown-item notify-item">
-                                            <i className="mdi mdi-logout"></i> <span>Logout</span>
-                                        </a>
-
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                            <ul className="list-inline menu-left mb-0">
-                                <li className="float-left">
-                                    <button className="button-menu-mobile open-left waves-light waves-effect">
-                                        <i className="mdi mdi-menu"></i>
-                                    </button>
-                                </li>
-                                <li className="hide-phone app-search">
-                                    <form role="search" className="">
-                                        <input type="text" placeholder="Search..." className="form-control"/>
-                                            <a href=""><i className="fa fa-search"/></a>
-                                    </form>
-                                </li>
-                            </ul>
-
-                        </nav>
-
-                    </div>
-                    <!-- Top Bar End -->
-
-
-                    <!-- ========== Left Sidebar Start ========== -->
-
-                    <div className="left side-menu">
-                        <div className="sidebar-inner slimscrollleft">
-                            <!--- Divider -->
-                            <div id="sidebar-menu">
-                                <ul>
-                                    <li>
-                                        <a href="real-estate-broker.html" className="waves-effect waves-primary">
-                                            <i className="ti-home"></i><span> Dashboard </span>
+                <Navbar/>
+                <div className="container-fluid">
+                    <div className="row">
+                        <nav className="col-md-2 d-none d-md-block bg-light sidebar">
+                            <div className="sidebar-sticky">
+                                <ul className="nav flex-column">
+                                    <li className="nav-item">
+                                        <a className="nav-link active" href="#">
+                                            <FontAwesomeIcon icon={faHome} className='iconCSS'/>
+                                            Dashboard <span className="sr-only">(current)</span>
                                         </a>
                                     </li>
-                                    <li className="has_sub">
-                                        <a href="javascript:void(0);" className="waves-effect waves-primary">
-                                            <i className="ti-stats-up"></i><span> Charts </span>
-                                            <span className="badge badge-primary pull-right">8</span>
-                                        </a>
-                                        <ul className="list-unstyled">
-                                            <li><a href="chart-flot.html">Flot Chart</a></li>
-                                            <li><a href="chart-morris.html">Morris Chart</a></li>
-                                            <li><a href="chart-chartist.html">Chartist chart</a></li>
-                                            <li><a href="chart-nvd3.html">Nvd3 charts</a></li>
-                                            <li><a href="chart-chartjs.html">Chartjs charts</a></li>
-                                            <li><a href="chart-peity.html">Peity Charts</a></li>
-                                            <li><a href="chart-sparkline.html">Sparkline Charts</a></li>
-                                            <li><a href="chart-other.html">Other Chart</a></li>
-                                        </ul>
-                                    </li>
-                                    <li className="has_sub">
-                                        <a href="javascript:void(0);" className="waves-effect waves-primary">
-                                            <i className="ti-map"></i><span> Maps </span>
-                                            <span className="menu-arrow"></span>
-                                        </a>
-                                        <ul className="list-unstyled">
-                                            <li><a href="map-google.html"> Google Maps</a></li>
-                                            <li><a href="map-vector.html"> Vector Maps</a></li>
-                                            <li><a href="map-mapael.html"> Mapael Maps</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="leaser.html" className="waves-effect waves-primary">
-                                            <i className="mdi mdi-account-multiple"></i><span> Leasers </span>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="#">
+                                            <FontAwesomeIcon icon={faChartLine} className='iconCSS'/>
+                                            Charts<span className="badge badge-primary" style={{marginLeft: "15px"}}>8</span>
                                         </a>
                                     </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="#">
+
+                                            <FontAwesomeIcon icon={faMapSigns} className='iconCSS'/>Maps
+                                        </a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="#">
+                                            <FontAwesomeIcon icon={faUserFriends} className='iconCSS'/>Leasers
+                                        </a>
+                                    </li>
+                                    {/*<li className="nav-item">*/}
+                                        {/*<a className="nav-link" href="#">*/}
+                                            {/*<span data-feather="bar-chart-2"></span>*/}
+                                            {/*Reports*/}
+                                        {/*</a>*/}
+                                    {/*</li>*/}
+                                    {/*<li className="nav-item">*/}
+                                        {/*<a className="nav-link" href="#">*/}
+                                            {/*<span data-feather="layers"></span>*/}
+                                            {/*Integrations*/}
+                                        {/*</a>*/}
+                                    {/*</li>*/}
                                 </ul>
 
-                                <div className="clearfix"></div>
+
+
                             </div>
-                            <div className="clearfix"></div>
-                        </div>
+                        </nav>
+
+                        <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-4">
+                            <div
+                                className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                                <h1 className="h2">Degron | Dashboard Real Estate Owner</h1>
+                                <div className="btn-toolbar mb-2 mb-md-0">
+                                    <div className="btn-group mr-2">
+
+                                        {/*<button className="btn btn-sm btn-outline-secondary">Share</button>*/}
+                                        {/*<button className="btn btn-sm btn-outline-secondary">Export</button>*/}
+                                    </div>
+                                    {/*<button className="btn btn-sm btn-outline-secondary dropdown-toggle">*/}
+                                       {/*<span data-feather="calendar"></span>*/}
+                                        {/*Sort:*/}
+                                    {/*</button>*/}
+                                    <div className="dropdown show">
+                                        <a className="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                           id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                           aria-expanded="false">
+                                            Sort
+                                        </a>
+
+                                        <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a className="dropdown-item" href="#">Buildings</a>
+                                            <a className="dropdown-item" href="#">Offices</a>
+                                            <a className="dropdown-item" href="#">Large Spaces</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/*<canvas className="my-4 w-100" id="myChart" width="900" height="380"></canvas>*/}
+
+                            <h2>Buildings</h2>
+                            <div className="card-deck">
+                                <div className="card">
+                                    <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975662-b72d4800-e0e9-11e8-8420-c7073e5ebbc1.jpg" alt="Card image cap"/>
+                                        <div className="card-body">
+                                            <h5 className="card-title">Hangzhou Xintiandi Office Towers</h5>
+                                            <p className="card-text">This is a wider card with supporting text below as
+                                                a natural lead-in to additional content. This content is a little bit
+                                                longer.</p>
+                                        </div>
+                                        <div className="card-footer">
+                                            <small className="text-muted">Hangzhou Xintiandi Office Towers, China</small>
+                                        </div>
+                                </div>
+                                <div className="card">
+                                    <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975664-b7c5de80-e0e9-11e8-9845-307e3dfa8fd1.jpg" alt="Card image cap"/>
+                                        <div className="card-body">
+                                            <h5 className="card-title">Hongkou Technology and Financial Building</h5>
+                                            <p className="card-text">This card has supporting text below as a natural
+                                                lead-in to additional content.</p>
+                                        </div>
+                                        <div className="card-footer">
+                                            <small className="text-muted">No.463 Tanggu Road, Hongkou District, Shanghai, China</small>
+                                        </div>
+                                </div>
+                                <div className="card">
+                                    <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975665-b85e7500-e0e9-11e8-8f78-2212413f600b.jpg" alt="Card image cap"/>
+                                        <div className="card-body">
+                                            <h5 className="card-title">IFFG Office - Hangzhou</h5>
+                                            <p className="card-text">This is a wider card with supporting text below as
+                                                a natural lead-in to additional content. This card has even longer
+                                                content than the first to show that equal height action.</p>
+                                        </div>
+                                        <div className="card-footer">
+                                            <small className="text-muted">IFFG Office-Hangzhou, Shanghai Shi, China</small>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <hr/>
+
+                            <div className="card-deck">
+                                <div className="card">
+                                    <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975666-b85e7500-e0e9-11e8-90a8-8a025077979d.jpg" alt="Card image cap"/>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Jin Mao Tower</h5>
+                                        <p className="card-text">This is a wider card with supporting text below as
+                                            a natural lead-in to additional content. This content is a little bit
+                                            longer.</p>
+                                    </div>
+                                    <div className="card-footer">
+                                        <small className="text-muted">88 Century Ave, LuJiaZui, Pudong Xinqu, China</small>
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975668-b85e7500-e0e9-11e8-8749-2485ece91c2d.jpg" alt="Card image cap"/>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Office Building No 463</h5>
+                                        <p className="card-text">This card has supporting text below as a natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div className="card-footer">
+                                        <small className="text-muted">No.463 Tanggu Road, Hongkou District, Shanghai, China</small>
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975672-b98fa200-e0e9-11e8-891b-8a70b5bb1d7c.jpg" alt="Card image cap"/>
+                                    <div className="card-body">
+                                        <h5 className="card-title">One Lujiazui</h5>
+                                        <p className="card-text">This is a wider card with supporting text below as
+                                            a natural lead-in to additional content. This card has even longer
+                                            content than the first to show that equal height action.</p>
+                                    </div>
+                                    <div className="card-footer">
+                                        <small className="text-muted">Lujiazui Ring Rd, LuJiaZui, Pudong Xinqu, Shanghai Shi, China</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
                     </div>
                 </div>
             </div>
