@@ -4,13 +4,14 @@ import {connect} from 'react-redux';
 import {faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import './css/team.css';
+import Navbar from '../landing-page/Navbar'
 
 class Team extends Component {
 
     render() {
         return (
             <div>
-
+<Navbar />
 
                 <div className=" d-flex justify-content-center flex-wrap">
 
