@@ -105,34 +105,6 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav mr-auto">
 
-
-                {/*<li className="nav-item">*/}
-                    {/*<Link className="nav-link" to="/assetMangers">*/}
-                        {/*{' '}*/}
-                        {/*Asset Managers*/}
-                    {/*</Link>*/}
-                {/*</li>*/}
-
-                {/*<li className="nav-item">*/}
-                    {/*<Link className="nav-link" to="/blog">*/}
-                        {/*{' '}*/}
-                        {/*Blog*/}
-                    {/*</Link>*/}
-                {/*</li>*/}
-                {/*<li className="nav-item">*/}
-                    {/*<Link className="nav-link" to="/FAQ">*/}
-                        {/*{' '}*/}
-                        {/*FAQ*/}
-                    {/*</Link>*/}
-                {/*</li>*/}
-
-                {/*<li className="nav-item">*/}
-                    {/*<Link className="nav-link" to="/investors">*/}
-                        {/*{' '}*/}
-                        {/*Investors*/}
-                    {/*</Link>*/}
-                {/*</li>*/}
-
                 <li className="nav-item">
                     <Link className="nav-link" to="/team">
                         {' '}
@@ -140,23 +112,17 @@ class Navbar extends Component {
                     </Link>
                 </li>
 
-                {/*<li className="nav-item">*/}
-                    {/*<Link className="nav-link" to="/theProcess">*/}
-                        {/*{' '}*/}
-                        {/*How the process works*/}
-                    {/*</Link>*/}
-                {/*</li>*/}
 
-                {/*<li className="nav-item">*/}
-                    {/*<Link className="nav-link" to="/whatsSTO">*/}
-                        {/*{' '}*/}
-                        {/*What is STO*/}
-                    {/*</Link>*/}
-                {/*</li>*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="RealEstateBroker">
+                    <Link className="nav-link" to="InvestorsDashboard">
                         {' '}
-                        Dashboard
+                        Investors
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/OwnersDashboard">
+                        {' '}
+                        Owners
                     </Link>
                 </li>
             </ul>

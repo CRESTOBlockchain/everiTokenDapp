@@ -27,7 +27,8 @@ import Post from './components/post/Post';
 import NotFound from './components/not-found/NotFound';
 
 import Team from './components/information/Team';
-import RealEstateBroker from './components/platform/RealEstateBroker';
+import InvestorsDashboard from './components/investors/InvestorsDashboard';
+import OwnersDashboard from './components/owners/OwnersDashboard';
 
 
 import './App.css';
@@ -64,15 +65,14 @@ class App extends Component {
 
                         <Route exact path="/" component={Landing} />
                         <Route exact path="/team" component={Team} />
-                        <Route exact path="/RealEstateBroker" component={RealEstateBroker}/>
+                        <Route exact path="/InvestorsDashboard" component={InvestorsDashboard}/>
+                        <Route exact path="/OwnersDashboard" component={OwnersDashboard}/>
 
 
 
                         <div className="container">
                             <Route exact path="/register" component={Register} />
                             <Route exact path="/login" component={Login} />
-
-
 
 
 

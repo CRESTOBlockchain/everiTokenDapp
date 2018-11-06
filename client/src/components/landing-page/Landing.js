@@ -19,10 +19,7 @@ class Landing extends Component {
     render() {
         return (
             <div>
-<Navbar/>
-
-
-
+                <Navbar/>
                 <section className="home bg-img-1 parallax" data-stellar-background-ratio="0.5">
                     <div className="bg-overlay"></div>
                     <div className="container">
@@ -34,22 +31,18 @@ class Landing extends Component {
                                     <p className="animated fadeInDown wow" data-wow-delay=".2s">Instead of middle man
                                         selling space we build a tokenized marketplace that will create a more liquid real estate market.</p>
                                     <p> Each project/building will have the ability to be bought with everiTokens.</p>
-
-                                    {/*<Link className="nav-link" to="/assetMangers">*/}
-                                    {/*{' '}*/}
-                                    {/*Asset Managers*/}
-                                    {/*</Link>*/}
-                                    <Link className='btn btn-primary btn-rounded w-lg animated fadeInDown wow' to="RealEstateBroker">
-                                        Use the Platform
+                                    <Link className='btn btn-primary btn-rounded w-lg animated fadeInDown wow' to="InvestorsDashboard" style={{marginRight: '20px'}}>
+                                        Investors
                                     </Link>
 
-                                    {/*<a href="dashboard/real-estate-broker.html"*/}
-                                       {/*className="btn btn-primary btn-rounded w-lg animated fadeInDown wow"*/}
-                                       {/*data-wow-delay=".4s">Use the platform</a>*/}
-                                    <div className="clearfix"></div>
-
+                                    <Link className='btn btn-primary btn-rounded w-lg animated fadeInDown wow' to="OwnersDashboard" style={{marginLeft: '20px'}}>
+                                        Owners
+                                    </Link>
                                 </div>
                             </div>
+
+
+
                         </div>
                     </div>
                 </section>

@@ -4,11 +4,11 @@ import {PropTypes} from 'prop-types';
 import {connect} from 'react-redux';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faHome, faChartLine, faMapSigns, faUserFriends} from '@fortawesome/free-solid-svg-icons'
-import Sidebar from './Sidebar';
-import Navbar from './Navbar2'
+
+import OwnersNavbar from './OwnersNavbar'
 import './css/sidebar.css';
 
-class RealEstateBroker extends Component {
+class OwnersDashboard extends Component {
 
     // This checks if user authenticated if yes automatically sends to dashboard - if enabled
     componentDidMount() {
@@ -20,7 +20,8 @@ class RealEstateBroker extends Component {
     render() {
         return (
             <div>
-                <Navbar/>
+                <OwnersNavbar/>
+
                 <div className="container-fluid">
                     <div className="row">
                         <nav className="col-md-2 d-none d-md-block bg-light sidebar">
@@ -50,16 +51,16 @@ class RealEstateBroker extends Component {
                                         </a>
                                     </li>
                                     {/*<li className="nav-item">*/}
-                                        {/*<a className="nav-link" href="#">*/}
-                                            {/*<span data-feather="bar-chart-2"></span>*/}
-                                            {/*Reports*/}
-                                        {/*</a>*/}
+                                    {/*<a className="nav-link" href="#">*/}
+                                    {/*<span data-feather="bar-chart-2"></span>*/}
+                                    {/*Reports*/}
+                                    {/*</a>*/}
                                     {/*</li>*/}
                                     {/*<li className="nav-item">*/}
-                                        {/*<a className="nav-link" href="#">*/}
-                                            {/*<span data-feather="layers"></span>*/}
-                                            {/*Integrations*/}
-                                        {/*</a>*/}
+                                    {/*<a className="nav-link" href="#">*/}
+                                    {/*<span data-feather="layers"></span>*/}
+                                    {/*Integrations*/}
+                                    {/*</a>*/}
                                     {/*</li>*/}
                                 </ul>
 
@@ -79,8 +80,8 @@ class RealEstateBroker extends Component {
                                         {/*<button className="btn btn-sm btn-outline-secondary">Export</button>*/}
                                     </div>
                                     {/*<button className="btn btn-sm btn-outline-secondary dropdown-toggle">*/}
-                                       {/*<span data-feather="calendar"></span>*/}
-                                        {/*Sort:*/}
+                                    {/*<span data-feather="calendar"></span>*/}
+                                    {/*Sort:*/}
                                     {/*</button>*/}
                                     <div className="dropdown show">
                                         <a className="btn btn-secondary dropdown-toggle" href="#" role="button"
@@ -104,38 +105,38 @@ class RealEstateBroker extends Component {
                             <div className="card-deck">
                                 <div className="card">
                                     <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975662-b72d4800-e0e9-11e8-8420-c7073e5ebbc1.jpg" alt="Card image cap"/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">Hangzhou Xintiandi Office Towers</h5>
-                                            <p className="card-text">This is a wider card with supporting text below as
-                                                a natural lead-in to additional content. This content is a little bit
-                                                longer.</p>
-                                        </div>
-                                        <div className="card-footer">
-                                            <small className="text-muted">Hangzhou Xintiandi Office Towers, China</small>
-                                        </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Hangzhou Xintiandi Office Towers</h5>
+                                        <p className="card-text">This is a wider card with supporting text below as
+                                            a natural lead-in to additional content. This content is a little bit
+                                            longer.</p>
+                                    </div>
+                                    <div className="card-footer">
+                                        <small className="text-muted">Hangzhou Xintiandi Office Towers, China</small>
+                                    </div>
                                 </div>
                                 <div className="card">
                                     <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975664-b7c5de80-e0e9-11e8-9845-307e3dfa8fd1.jpg" alt="Card image cap"/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">Hongkou Technology and Financial Building</h5>
-                                            <p className="card-text">This card has supporting text below as a natural
-                                                lead-in to additional content.</p>
-                                        </div>
-                                        <div className="card-footer">
-                                            <small className="text-muted">No.463 Tanggu Road, Hongkou District, Shanghai, China</small>
-                                        </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Hongkou Technology and Financial Building</h5>
+                                        <p className="card-text">This card has supporting text below as a natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div className="card-footer">
+                                        <small className="text-muted">No.463 Tanggu Road, Hongkou District, Shanghai, China</small>
+                                    </div>
                                 </div>
                                 <div className="card">
                                     <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975665-b85e7500-e0e9-11e8-8f78-2212413f600b.jpg" alt="Card image cap"/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">IFFG Office - Hangzhou</h5>
-                                            <p className="card-text">This is a wider card with supporting text below as
-                                                a natural lead-in to additional content. This card has even longer
-                                                content than the first to show that equal height action.</p>
-                                        </div>
-                                        <div className="card-footer">
-                                            <small className="text-muted">IFFG Office-Hangzhou, Shanghai Shi, China</small>
-                                        </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">IFFG Office - Hangzhou</h5>
+                                        <p className="card-text">This is a wider card with supporting text below as
+                                            a natural lead-in to additional content. This card has even longer
+                                            content than the first to show that equal height action.</p>
+                                    </div>
+                                    <div className="card-footer">
+                                        <small className="text-muted">IFFG Office-Hangzhou, Shanghai Shi, China</small>
+                                    </div>
                                 </div>
                             </div>
 
@@ -186,7 +187,7 @@ class RealEstateBroker extends Component {
     }
 }
 
-RealEstateBroker.propTypes = {
+OwnersDashboard.propTypes = {
     auth: PropTypes.object.isRequired
 };
 
@@ -194,4 +195,4 @@ const mapStateToProps = state => ({
     auth: state.auth
 });
 
-export default connect(mapStateToProps)(RealEstateBroker);
+export default connect(mapStateToProps)(OwnersDashboard);

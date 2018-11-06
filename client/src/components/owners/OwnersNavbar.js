@@ -5,11 +5,11 @@ import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
 import { clearCurrentProfile } from '../../actions/profileActions';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faPhone, faPaperclip} from '@fortawesome/free-solid-svg-icons'
+import {faSearch} from '@fortawesome/free-solid-svg-icons'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
-import './css/sidebar.css';
+// import './css/sidebar.css';
 
-class Sidebar extends Component {
+class OwnersNavbar extends Component {
     onLogoutClick(e) {
         e.preventDefault();
         this.props.clearCurrentProfile();
@@ -20,20 +20,23 @@ class Sidebar extends Component {
 
         return (
             <div>
-                <div className="sidenav">
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#clients">Clients</a>
-                    <a href="#contact">Contact</a>
-                </div>
+                <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow navbarCSS">
+                    <Link className="navbar-brand navbar-brandCSS col-sm-3 col-md-2 mr-0" to="/">Degron</Link>
 
-
+                    <input className="form-control form-controlCSS form-control-darkCSS form-control-dark w-25 " type="text" placeholder="Search"
+                           aria-label="Search"/>
+                    <ul className="navbar-nav px-3">
+                        <li className="nav-item text-nowrap">
+                            <a className="nav-link" href="#">Sign out</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         );
     }
 }
 
-Sidebar.propTypes = {
+OwnersNavbar.propTypes = {
     logoutUser: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired
 };
@@ -43,5 +46,5 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps, { logoutUser, clearCurrentProfile })(
-    Sidebar
+    OwnersNavbar
 );

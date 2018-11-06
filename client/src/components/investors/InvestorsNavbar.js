@@ -9,7 +9,7 @@ import {faSearch} from '@fortawesome/free-solid-svg-icons'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
 // import './css/sidebar.css';
 
-class Navbar2 extends Component {
+class InvestorsNavbar extends Component {
     onLogoutClick(e) {
         e.preventDefault();
         this.props.clearCurrentProfile();
@@ -21,7 +21,7 @@ class Navbar2 extends Component {
         return (
             <div>
                 <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow navbarCSS">
-                    <a className="navbar-brand navbar-brandCSS col-sm-3 col-md-2 mr-0" href="#">Degron</a>
+                    <Link className="navbar-brand navbar-brandCSS col-sm-3 col-md-2 mr-0" to="/">Degron</Link>
 
                     <input className="form-control form-controlCSS form-control-darkCSS form-control-dark w-25 " type="text" placeholder="Search"
                            aria-label="Search"/>
@@ -36,7 +36,7 @@ class Navbar2 extends Component {
     }
 }
 
-Navbar2.propTypes = {
+InvestorsNavbar.propTypes = {
     logoutUser: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired
 };
@@ -46,5 +46,5 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps, { logoutUser, clearCurrentProfile })(
-    Navbar2
+    InvestorsNavbar
 );
