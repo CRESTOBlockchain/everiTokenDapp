@@ -28,15 +28,27 @@ class Landing extends Component {
                                 <div className="home-wrapper text-center">
                                     <h1 className="animated fadeInDown wow" data-wow-delay=".1s">A more efficient real
                                         estate market</h1>
-                                    <p className="animated fadeInDown wow" data-wow-delay=".2s">Instead of middle man
-                                        selling space we build a tokenized marketplace that will create a more liquid real estate market.</p>
-                                    <p> Each project/building will have the ability to be bought with everiTokens.</p>
+                                    <h4>Degron represents next generation of crowdfunding for real estate market.
+                                        Our fintech solution based on EveriToken blockchain brings new opportunities:
+                                    </h4>
+
+                                    <ul>
+                                        <li>For Investors – fractional ownership and dividends from properties all over the world
+                                        </li>
+                                        <li>For Property owners – access to range of investors as broad as never before
+                                        </li>
+                                        <li>For both parties – safe and convenient investment process  powered by Safe contract and using everiTokens as means of transaction
+                                        </li>
+                                    </ul>
+
                                     <Link className='btn btn-primary btn-rounded w-lg animated fadeInDown wow' to="InvestorsDashboard" style={{marginRight: '20px'}}>
-                                        Investors
+                                        <div style={{fontSize: "12px"}}>I am a property </div>
+                                        <div style={{fontSize: "16px"}}>INVESTOR</div>
                                     </Link>
 
                                     <Link className='btn btn-primary btn-rounded w-lg animated fadeInDown wow' to="OwnersDashboard" style={{marginLeft: '20px'}}>
-                                        Owners
+                                        <div style={{fontSize: "12px"}}>I am property</div>
+                                        <div style={{fontSize: "16px"}}>OWNER</div>
                                     </Link>
                                 </div>
                             </div>

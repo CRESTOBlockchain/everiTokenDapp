@@ -23,9 +23,7 @@ class Team extends Component {
                             className="member-linkedin"> <FontAwesomeIcon icon={faLinkedinIn} size="1x"/></a></div>
                         <h2 className="h2">Mariia Kutkina</h2>
                         <span className="member-jobtitle"> Business Strategy </span>
-                        <div className="member-bio"><p>Above 10 years of experience in commercial real estate markets in UAE, Spain & Russia
-                            Above 8 years of entrepreneurial experience, 2 startups successfully launched
-                            IESE / CEIBS MBA</p>
+                        <div className="member-bio"><p>Above 10 years of experience in commercial real estate markets in UAE, Spain & Russia. Above 8 years of entrepreneurial experience, 2 startups successfully launched. IESE / CEIBS MBA</p>
                         </div>
                     </div>
                     <div className=" member">
@@ -35,9 +33,7 @@ class Team extends Component {
                             target="_blank" href='https://www.linkedin.com/in/shangzhi-bian-83903639/'
                             className="member-linkedin"> <FontAwesomeIcon icon={faLinkedinIn} size="1x"/></a></div>
                         <h2 className="h2">Brian Bian</h2><span className="member-jobtitle"> Finance (due diligence) </span>
-                        <div className="member-bio"><p>Above 7 years of experience in real estate investments, development projects & asset management
-                            Co-founder of Vnet blockchain project for real estate
-                            CEIBS MBA & CFA level 3</p>
+                        <div className="member-bio"><p>Above 7 years of experience in real estate investments, development projects & asset management. Co-founder of Vnet blockchain project for real estate.  CEIBS MBA & CFA level 3</p>
                         </div>
                     </div>
 
@@ -48,9 +44,8 @@ class Team extends Component {
                             target="_blank" href='https://www.linkedin.com/in/otto-kafka-50899b7a/'
                             className="member-linkedin"> <FontAwesomeIcon icon={faLinkedinIn} size="1x"/></a></div>
                         <h2 className="h2">Otto Kafka</h2><span className="member-jobtitle"> Technical Lead</span>
-                        <div className="member-bio"><p>Above 10 years of entrepreneurial experience in the tech industry
-                            Full stack developer with mastery of React, Node JS, Express. JS, and MongoDB
-                            Successfully launched projects in California, Beijing, Shanghai, & Shenzhen
+                        <div className="member-bio"><p>Above 10 years of entrepreneurial experience in the tech industry. Full stack developer with mastery of React, Node JS, Express. JS, and MongoDB. Successfully launched projects in California, Beijing, Shanghai, & Shenzhen
+
                         </p>
                         </div>
                     </div>
@@ -69,9 +64,7 @@ class Team extends Component {
                             target="_blank" href='https://linkedin.com/in/mobinarablou'
                             className="member-linkedin"> <FontAwesomeIcon icon={faLinkedinIn} size="1x"/></a></div>
                         <h2 className="h2">Mobin Arablou</h2><span className="member-jobtitle"> Blockchain Developer </span>
-                        <div className="member-bio"><p>8 years of experiences in software development (Machine learning, Blockchain, App development)
-                            White Hat Hacker
-                            Holds degrees in computer engineering, computer science and electronics & biotechnology</p>
+                        <div className="member-bio"><p>8 years of experiences in software development (Machine learning, Blockchain, App development). White Hat Hacker. Holds degrees in computer engineering, computer science and electronics & biotechnology</p>
                         </div>
                     </div>
 
@@ -94,9 +87,7 @@ class Team extends Component {
                             href="https://www.linkedin.com/in/aruzikulov/" target="_blank"
                             className="member-linkedin"> <FontAwesomeIcon icon={faLinkedinIn} size="1x"/></a></div>
                         <h2 className="h2">Jon Ruzikulov</h2><span className="member-jobtitle">  Blockchain Developer </span>
-                        <div className="member-bio"><p>Co-Founder & CTO at OBORCHAIN Blockchain enthusiast and developer
-                            15 years of software development experience. Information security professional
-                            Computer Science Lecturer at a University and PhD candidate
+                        <div className="member-bio"><p>Co-Founder & CTO at OBORCHAIN Blockchain enthusiast and developer. 15 years of software development experience. Information security professional. Computer Science Lecturer at a University and PhD candidate
                         </p>
                         </div>
                     </div>

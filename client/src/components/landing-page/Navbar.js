@@ -125,6 +125,18 @@ class Navbar extends Component {
                         Owners
                     </Link>
                 </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/OwnersDashboard">
+                        {' '}
+                        i
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/OwnersDashboard">
+                        {' '}
+                        Owners
+                    </Link>
+                </li>
             </ul>
             {isAuthenticated ? authLinks : guestLinks}
           </div>
