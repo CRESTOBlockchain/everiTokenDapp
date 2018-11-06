@@ -29,6 +29,7 @@ import NotFound from './components/not-found/NotFound';
 import Team from './components/information/Team';
 import InvestorsDashboard from './components/investors/InvestorsDashboard';
 import OwnersDashboard from './components/owners/OwnersDashboard';
+import CreateProperty from './components/owners/CreateProperty';
 
 
 import './App.css';
@@ -67,6 +68,7 @@ class App extends Component {
                         <Route exact path="/team" component={Team} />
                         <Route exact path="/InvestorsDashboard" component={InvestorsDashboard}/>
                         <Route exact path="/OwnersDashboard" component={OwnersDashboard}/>
+                        <Route exact path="/CreateProperty" component={CreateProperty}/>
 
 
 
