@@ -1,0 +1,328 @@
+<html>
+
+<head>
+    <script src="../dist/evt.min.js" crossorigin="anonymous" defer></script>
+
+
+    <script>
+    var apiCaller = null;
+    var userExist = false;
+    var version = 3;
+    var versionCheck = null;
+    var apiUser = null;
+    var apiOwner = null;
+    
+    if (userExist){
+        //retrieve their wallet from database
+        //maybe just scan the qr code of the seller by phone and pay
+
+    }
+    else{
+        //create wallet
+       // let key = await EVT.EvtKey.randomPrivateKey();
+       // let publicKey = EVT.EvtKey.privateToPublic(key);
+       //and store in database or on user's phone
+    }
+
+     export async function investEVT(){
+        
+        document.getElementById("investClear").innerHTML = "Investing.. (Please be patient, may take up to 10 seconds)";
+
+        //NOT SECURE WAY, just for demonstration purposes
+        let ownerKeyPublic = "EVT6QpgkCXNRMoe53dzTfZDs8ipwDq5esXA6KyEF6jRFpWLBA1ppk";
+        let ownerKeyPrivate = "5Jk1tWkYXMSWcnwBG3aRNvfCNaGfizX6axF7rpfmzuMmtFzJhXo"
+        let userKeyPublic = "EVT7mo5QXe86bd3J27Gn4cQpf7VVntcZeF86Kw3baNgGFsMLK9atg";
+
+        //get apiOwner to transfer Degron token to apiUser
+        const network = {
+        host: 'testnet1.everitoken.io', 
+        port: 8888,                     
+        protocol: 'http'               
+        };
+
+        // get apiUser instance
+        apiOwner = await window.EVT({
+        endpoint: network,
+        keyProvider: [ ownerKeyPrivate ] 
+        });
+
+
+        //invest user defined amount;
+        let userEVT = document.getElementById("sendEVT").value;
+        
+        let ownerBalanceBefore = await apiOwner.getFungibleBalance(ownerKeyPublic, 1);
+        
+        
+        let userTRX = await apiUser.pushTransaction(
+        { maxCharge: 100000 },   // limit of the transaction fee
+        new window.EVT.EvtAction("transferft", {
+            from: userKeyPublic, // sender
+            to: ownerKeyPublic, // receiver
+            number: userEVT + ".00000 S#1", // S#1 means the No 1 fungible token (EVT token)
+            memo: "Investor" // Comment or extra data
+        })
+    );
+
+    let ownerBalanceAfter = await apiOwner.getFungibleBalance(ownerKeyPublic, 1);
+
+    //make sure owner balance is increased after transfer or else return
+    if(ownerBalanceAfter <= ownerBalanceBefore)
+    return;
+
+    //transfer evt to owner
+    //check transfer is complete
+    //transfer degron to user     
+        
+    let ownerTRX = await apiOwner.pushTransaction(
+    { maxCharge: 100000 },   // limit of the transaction fee
+    new window.EVT.EvtAction("transferft", {
+        from: ownerKeyPublic, // sender
+        to: userKeyPublic, // receiver
+        number: userEVT + ".00000 S#567", // S#1 means the No 1 fungible token (EVT token)
+        memo: "Customer" // Comment or extra data
+    })
+    );
+    //alert("Transfer complete");
+    document.getElementById("investClear").innerHTML = "Invested!";
+    document.getElementById("sendEVT").value = '';
+    document.getElementById("deg").value = "loading degron";
+    let deg = await apiUser.getFungibleBalance(userKeyPublic, 567);   
+    document.getElementById("deg").value = deg;
+   }
+
+
+export async function importWallet(){
+    
+    //alert("okay");
+    let userKeyPrivate = "5K9esKA7AKFQ7JpCRPvCMPRozTynhdahHYVo64v2CWXQjLgrNto";
+    let userKeyPublic = "EVT7mo5QXe86bd3J27Gn4cQpf7VVntcZeF86Kw3baNgGFsMLK9atg";
+
+    const network = {
+    host: 'testnet1.everitoken.io', 
+    port: 8888,                     
+    protocol: 'http'               
+    };
+
+    // get apiUser instance
+    apiUser = await window.EVT({
+    endpoint: network,
+    keyProvider: [ userKeyPrivate ] 
+    });
+
+    try{
+        if(apiUser != null){
+            document.getElementById("status").value = "Connected";
+            var version = 3;
+
+            //check major version change and prevent functions from running if there is a major change
+            let info = await apiUser.getInfo();
+            let apiVersion = info.evt_api_version.split(".")[0];
+            document.getElementById("version").value = info.evt_api_version;
+
+            //version check
+            if(apiVersion == version)
+                versionCheck = true;
+
+            //if invalid version prevent code from running
+            else {
+                versionCheck = false;
+                return;
+            }
+                
+            
+         }
+         else{
+             alert("EveriToken api is not ready, be patient");
+         }
+        }
+        catch(e){
+            console.log(e.message);
+        }
+
+    try{
+        
+        document.getElementById("evt").value = "loading evt";
+        let evt = await apiUser.getFungibleBalance(userKeyPublic, 1);
+        document.getElementById("evt").value = evt;
+        document.getElementById("deg").value = "loading degron";
+        let deg = await apiUser.getFungibleBalance(userKeyPublic, 567);   
+        document.getElementById("deg").value = deg;
+    }
+    catch(e)
+    {
+        document.getElementById("evt").value = e.message;
+        document.getElementById("deg").value = e.message;
+    }
+}
+
+    //can just run this html page with evt.js and it works
+
+    document.addEventListener("DOMContentLoaded", async function(event) {
+
+        var key = "5Jk1tWkYXMSWcnwBG3aRNvfCNaGfizX6axF7rpfmzuMmtFzJhXo";
+        const network = {
+        host: 'testnet1.everitoken.io', // For everiToken TestNet (See all the networks on https://www.everitoken.io/networks)
+        port: 8888,                     // defaults to 8888
+        protocol: 'http'               // the TestNet of everiToken uses http and the MainNet uses https
+        };
+
+        // get APICaller instance
+        apiCaller = await EVT({
+        endpoint: network,
+        keyProvider: [ key ] // The private key provider. Here we use the private key directly. You can also pass indirect value to increse security. See below.
+        });
+        
+    });
+
+    //connect to network and initialize library
+    async function initApi(){
+        
+            if(apiCaller != null){
+            var version = 3;
+            let info = await apiCaller.getInfo();
+            let apiVersion = info.evt_api_version.split(".")[0];
+            if(apiVersion == version)
+                versionCheck = true;
+
+            else versionCheck = false;
+            
+            console.log("api main: " + apiVersion);
+         }
+         else{
+             alert("EveriToken api is not ready, be patient");
+         }
+             //if versionCheck is false we wont execute anymore code or functions and report to admin possibly email
+            //check version of library and everitoken major change 4^ will revert this code
+    }
+
+
+
+async function createNonFungible(){
+        let publicKey = "EVT6QpgkCXNRMoe53dzTfZDs8ipwDq5esXA6KyEF6jRFpWLBA1ppk";
+        await apiCaller.pushTransaction(
+        { maxCharge: 10000},
+        new EVT.EvtAction("issuetoken", {
+            "domain": "Degron",
+            "names": [
+                "DegronFinchCorp" + "1",
+                "DegronAmatielCorp" + "2",
+                "DegronSefroCrop" + "3"
+            ],
+            "owner": [
+                    publicKey
+            ]
+        })
+    );}
+
+
+
+async function createFungible(){
+    let publicKey = "EVT6QpgkCXNRMoe53dzTfZDs8ipwDq5esXA6KyEF6jRFpWLBA1ppk";
+    let symbol = "ABC";
+    let newTrxId = (await apiCaller.pushTransaction(
+    new EVT.EvtAction("newfungible", {
+        name: symbol + ".POINTS",
+        sym_name: symbol,
+        sym: "5,S#567", //33
+        creator: publicKey,
+        manage: { name: "manage", threshold: 1, authorizers: [ { ref: "[A] " + publicKey, weight: 1  } ] }, 
+        issue: { name: "issue", threshold: 1, authorizers: [ { ref: "[A] " + publicKey, weight: 1  } ] }, 
+        total_supply: "100000.00000 S#567"
+    })
+    )).transactionId;
+    debug.log(newTrxId);
+    alert("done");
+}
+
+async function issueFungible(){
+
+    let publicKey = "EVT6QpgkCXNRMoe53dzTfZDs8ipwDq5esXA6KyEF6jRFpWLBA1ppk";
+
+    let newTrxId = (await apiCaller.pushTransaction(
+    new EVT.EvtAction("issuefungible", {
+    address: publicKey,
+    number: "100000.00000 S#567",
+    memo: "initial issue"
+    }, ".fungible", "567")
+    )).transactionId;
+    
+    alert("issued fungible!");
+}
+
+
+
+
+async function checkFungible(){
+    let publicKey = "EVT6QpgkCXNRMoe53dzTfZDs8ipwDq5esXA6KyEF6jRFpWLBA1ppk";
+    //let var3 =  await apiCaller.getCreatedFungibles(publicKey);
+    let var3 = await apiCaller.getFungibleBalance(publicKey, 1);
+    console.log("fungible created: " + var3);
+    let var2 = await apiCaller.getFungibleBalance(publicKey, 567);   
+    
+    console.log("fungible balance: "+ var2);
+}
+
+
+
+async function transferFungible(){
+
+    let publicKey = "EVT6QpgkCXNRMoe53dzTfZDs8ipwDq5esXA6KyEF6jRFpWLBA1ppk";
+    let trx = await apiCaller.pushTransaction(
+    { maxCharge: 100000 },   // limit of the transaction fee
+    new EVT.EvtAction("transferft", {
+        from: publicKey, // sender
+        to: "EVT7mo5QXe86bd3J27Gn4cQpf7VVntcZeF86Kw3baNgGFsMLK9atg", // receiver
+        number: "10.00000 S#567", // S#1 means the No 1 fungible token (EVT token)
+        memo: "Customer" // Comment or extra data
+    })
+);
+console.log(JSON.stringify(trx, null, 2));
+alert("transfer complete");
+}
+
+async function checkFungibleUser(){
+
+    try {
+        //let publicKey = "EVT7mo5QXe86bd3J27Gn4cQpf7VVntcZeF86Kw3baNgGFsMLK9atg";
+        let publicKey = "EVT6QpgkCXNRMoe53dzTfZDs8ipwDq5esXA6KyEF6jRFpWLBA1ppk";
+        let var4 =  await apiCaller.getCreatedFungibles(publicKey);
+        console.log(JSON.stringify(var4, null, 2));
+        let var3 = await apiCaller.getFungibleBalance(publicKey, 1);
+    // console.log("fungible created: " + var3);
+        let var2 = await apiCaller.getFungibleBalance(publicKey, 567);   
+        
+        console.log("fungible balance: "+ var2);
+    }   
+    catch (error) {
+        if (error.isServerError) { //
+            console.log(error.message);
+            alert("server error");
+        }
+        else {
+            alert("client error");
+        }
+    }
+}
+
+    </script>
+</head>
+
+
+<body>
+    <button type="button" id="myBtn" onclick="initApi()">Version Check</button>
+    <button type="button" id="myBtn" onclick="createDomain()">Create Domain</button>
+    <button type="button" id="myBtn" onclick="checkDomains()">Check Domains</button>
+   <!-- <button type="button" id="myBtn" onclick="createNonFungible()">Create Non Fungible</button> 
+    //<button type="button" id="myBtn" onclick="checkNonFungible()">Check Non Fungible</button> -->
+    
+    <button type="button" id="myBtn" onclick="createFungible()">create Fungible</button>
+    <button type="button" id="myBtn" onclick="issueFungible()">issue Fungible</button>
+    <button type="button" id="myBtn" onclick="checkFungible()">check Fungible</button>
+
+    <button type="button" id="myBtn" onclick="transferFungible()">transfer Fungible</button>
+    <button type="button" id="myBtn" onclick="checkFungibleUser()">check Fungible User</button>
+    
+</body>
+
+
+</html>

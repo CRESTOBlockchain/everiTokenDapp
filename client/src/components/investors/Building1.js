@@ -1,3 +1,5 @@
+//import "./evt.js";
+//import "./DegronEvt.js";
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {PropTypes} from 'prop-types';
@@ -7,14 +9,39 @@ import {faHome, faChartLine, faMapSigns, faUserFriends} from '@fortawesome/free-
 
 import Navbar from './InvestorsNavbar'
 import './css/sidebar.css';
+import { investEVT, importWallet } from './DegronEvt.js'
+
 
 class Building1 extends Component {
+
+
+    /*constructor(){
+        super();
+        loadEVT();
+
+    }*/
+
 
     // This checks if user authenticated if yes automatically sends to dashboard - if enabled
     componentDidMount() {
         if (this.props.auth.isAuthenticated) {
             // this.props.history.push('/dashboard');
         }
+
+        const script = document.createElement("script");
+
+        script.src = "./evt.min.js";
+
+        script.type = 'text/javascript';
+        script.async = true;
+
+        document.body.appendChild(script);
+        window.addEventListener('load', this.loadEVT);
+        //loadEVT();
+
+    }
+    componentWillMount (){
+
     }
 
     render() {
@@ -81,7 +108,7 @@ class Building1 extends Component {
                             {/*<canvas className="my-4 w-100" id="myChart" width="900" height="380"></canvas>*/}
 
                             <h2>Buildings 1</h2>
-<p>This building is really awesome and you should invest in it</p>
+                            <p>This building is really awesome and you should invest in it</p>
                             <p>Trust me I am a business man so I know a deal.</p>
 
                             <Link to='building1' className="card">
@@ -94,9 +121,20 @@ class Building1 extends Component {
                                 </div>
                                 <div className="card-footer">
                                     <small className="text-muted">Hangzhou Xintiandi Office Towers, China</small>
+
                                 </div>
                             </Link>
-                            <button className="btn btn-primary">invest</button>
+                            <div>
+                                <p>Status of Everitoken blockchain&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="status" value="Unconnected"></input> <b>&nbsp;Step 1: Load Wallet </b></p>
+                                <p>Version of Everitoken blockchain &nbsp;<input type="text" id="version"></input><b>&nbsp;&nbsp;Step 2: Type in amount you wish to invest and click Invest button </b></p>
+                            </div>
+                            <p>Investor: Michael &nbsp;&nbsp;<button className="btn btn-primary" onClick={importWallet} >Load Wallet</button></p>
+                            <p><b>Michael's Wallet</b>: Everitoken (EVTs): <input type="text" value="" id="evt"></input> Degron(Degs): <input type="text" id="deg"></input>
+                            </p>
+                            <p>Using Everitoken(<b>EVT</b>) you can now invest in real estate, invest your EVT and get Degron token(<b>Deg</b>) and safeguard your money and future"</p>
+                            <p>Invest EVT amount in this property (example: 20): <input type="text" id="sendEVT"></input> <button className="btn btn-primary" onClick={investEVT} >invest</button></p> <p id="investClear"></p>
+
+
                         </main>
                     </div>
                 </div>
