@@ -128,13 +128,19 @@ class Navbar extends Component {
                 <li className="nav-item">
                     <Link className="nav-link" to="/OwnersDashboard">
                         {' '}
-                        i
+                        How the process works
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/OwnersDashboard">
                         {' '}
-                        Owners
+                        For Property Owners
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/OwnersDashboard">
+                        {' '}
+                        Blog
                     </Link>
                 </li>
             </ul>

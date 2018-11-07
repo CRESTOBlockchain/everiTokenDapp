@@ -26,12 +26,10 @@ class InvestorsDashboard extends Component {
                         <nav className="col-md-2 d-none d-md-block bg-light sidebar">
                             <div className="sidebar-sticky">
                                 <ul className="nav flex-column">
-                                    <li className="nav-item">
-                                        <a className="nav-link active" href="#">
-                                            <FontAwesomeIcon icon={faHome} className='iconCSS'/>
-                                            Dashboard <span className="sr-only">(current)</span>
-                                        </a>
-                                    </li>
+                                    <Link className="nav-link active" to='InvestorsDashboard'>
+                                        <FontAwesomeIcon icon={faHome} className='iconCSS'/>
+                                        Dashboard <span className="sr-only">(current)</span>
+                                    </Link>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#">
                                             <FontAwesomeIcon icon={faChartLine} className='iconCSS'/>
@@ -102,7 +100,7 @@ class InvestorsDashboard extends Component {
 
                             <h2>Buildings</h2>
                             <div className="card-deck">
-                                <div className="card">
+                                <Link to='building1' className="card">
                                     <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975662-b72d4800-e0e9-11e8-8420-c7073e5ebbc1.jpg" alt="Card image cap"/>
                                         <div className="card-body">
                                             <h5 className="card-title">Hangzhou Xintiandi Office Towers</h5>
@@ -113,7 +111,7 @@ class InvestorsDashboard extends Component {
                                         <div className="card-footer">
                                             <small className="text-muted">Hangzhou Xintiandi Office Towers, China</small>
                                         </div>
-                                </div>
+                                </Link>
                                 <div className="card">
                                     <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975664-b7c5de80-e0e9-11e8-9845-307e3dfa8fd1.jpg" alt="Card image cap"/>
                                         <div className="card-body">

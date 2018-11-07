@@ -28,6 +28,9 @@ import NotFound from './components/not-found/NotFound';
 
 import Team from './components/information/Team';
 import InvestorsDashboard from './components/investors/InvestorsDashboard';
+import Building1 from './components/investors/Building1';
+
+
 import OwnersDashboard from './components/owners/OwnersDashboard';
 import CreateProperty from './components/owners/CreateProperty';
 
@@ -66,7 +69,13 @@ class App extends Component {
 
                         <Route exact path="/" component={Landing} />
                         <Route exact path="/team" component={Team} />
+
+
                         <Route exact path="/InvestorsDashboard" component={InvestorsDashboard}/>
+                        <Route exact path="/building1" component={Building1}/>
+
+
+
                         <Route exact path="/OwnersDashboard" component={OwnersDashboard}/>
                         <Route exact path="/CreateProperty" component={CreateProperty}/>
 
