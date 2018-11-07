@@ -27,6 +27,9 @@ import Post from './components/post/Post';
 import NotFound from './components/not-found/NotFound';
 
 import Team from './components/information/Team';
+import OwnersInfo from './components/information/OwnersInfo';
+import InvestorsInfo from './components/information/InvestorsInfo';
+
 import InvestorsDashboard from './components/investors/InvestorsDashboard';
 import Building1 from './components/investors/Building1';
 
@@ -69,6 +72,9 @@ class App extends Component {
 
                         <Route exact path="/" component={Landing} />
                         <Route exact path="/team" component={Team} />
+                        <Route exact path="/investorsinfo" component={InvestorsInfo} />
+                        <Route exact path="/OwnersInfo" component={OwnersInfo} />
+
 
 
                         <Route exact path="/InvestorsDashboard" component={InvestorsDashboard}/>

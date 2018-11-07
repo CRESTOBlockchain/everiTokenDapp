@@ -21,35 +21,6 @@ class OwnersNavbar extends Component {
 
         return (
             <div>
-                {/*<nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">*/}
-                    {/*<div className="container">*/}
-                        {/*<Link className="navbar-brand" to="/">*/}
-                            {/*CRESTO*/}
-                        {/*</Link>*/}
-                        {/*<button*/}
-                            {/*className="navbar-toggler"*/}
-                            {/*type="button"*/}
-                            {/*data-toggle="collapse"*/}
-                            {/*data-target="#mobile-nav"*/}
-                        {/*>*/}
-                            {/*<span className="navbar-toggler-icon" />*/}
-                        {/*</button>*/}
-
-                        {/*<div className="collapse navbar-collapse" id="mobile-nav">*/}
-                            {/*<ul className="navbar-nav mr-auto">*/}
-
-
-                            {/*</ul>*/}
-
-                        {/*</div>*/}
-                    {/*</div>*/}
-                {/*</nav>*/}
-
-
-
-
-
-
                 <nav className="navbar navbar-expand-sm navbar-dark fixed-top bg-dark flex-md-wrap p-0 shadow navbarCSS">
                     <Link className="navbar-brand navbar-brandCSS mr-0" to="/">Degron</Link>
 
@@ -71,7 +42,7 @@ class OwnersNavbar extends Component {
 
 
                             <li className="nav-item text-nowrap">
-                                <Link className="nav-link" to="CreateOffice">Create Property</Link>
+                                <Link className="nav-link" to="CreateProperty">Create Property</Link>
                             </li>
 
 

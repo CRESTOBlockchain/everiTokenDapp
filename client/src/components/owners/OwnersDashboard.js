@@ -39,22 +39,7 @@ class OwnersDashboard extends Component {
                                             Create Property
                                         </Link>
                                     </li>
-                                    {/*<li className="nav-item">*/}
-                                        {/*<a className="nav-link" href="#">*/}
-
-                                            {/*<FontAwesomeIcon icon={faMapSigns} className='iconCSS'/>Maps*/}
-                                        {/*</a>*/}
-                                    {/*</li>*/}
-                                    {/*<li className="nav-item">*/}
-                                        {/*<a className="nav-link" href="#">*/}
-                                            {/*<FontAwesomeIcon icon={faUserFriends} className='iconCSS'/>Leasers*/}
-                                        {/*</a>*/}
-                                    {/*</li>*/}
-
                                 </ul>
-
-
-
                             </div>
                         </nav>
 
@@ -64,9 +49,7 @@ class OwnersDashboard extends Component {
                                 <h1 className="h2">Degron | Property Owner’s Dashboard</h1>
                                 <div className="btn-toolbar mb-2 mb-md-0">
                                     <div className="btn-group mr-2">
-
                                     </div>
-
                                 </div>
                             </div>
 

@@ -114,35 +114,35 @@ class Navbar extends Component {
 
 
                 <li className="nav-item">
-                    <Link className="nav-link" to="InvestorsDashboard">
+                    <Link className="nav-link" to="InvestorsInfo">
                         {' '}
-                        Investors
+                        Investors-info
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/OwnersDashboard">
+                    <Link className="nav-link" to="/OwnersInfo">
                         {' '}
-                        Owners
+                        Owners-Info
                     </Link>
                 </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/OwnersDashboard">
-                        {' '}
-                        How the process works
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/OwnersDashboard">
-                        {' '}
-                        For Property Owners
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/OwnersDashboard">
-                        {' '}
-                        Blog
-                    </Link>
-                </li>
+                {/*<li className="nav-item">*/}
+                    {/*<Link className="nav-link" to="/OwnersDashboard">*/}
+                        {/*{' '}*/}
+                        {/*How the process works*/}
+                    {/*</Link>*/}
+                {/*</li>*/}
+                {/*<li className="nav-item">*/}
+                    {/*<Link className="nav-link" to="/OwnersInfo">*/}
+                        {/*{' '}*/}
+                        {/*Owners-info*/}
+                    {/*</Link>*/}
+                {/*</li>*/}
+                {/*<li className="nav-item">*/}
+                    {/*<Link className="nav-link" to="/OwnersDashboard">*/}
+                        {/*{' '}*/}
+                        {/*Blog*/}
+                    {/*</Link>*/}
+                {/*</li>*/}
             </ul>
             {isAuthenticated ? authLinks : guestLinks}
           </div>
