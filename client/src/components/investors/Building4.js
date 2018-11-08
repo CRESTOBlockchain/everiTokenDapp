@@ -12,7 +12,9 @@ import './css/sidebar.css';
 import { investEVT, importWallet } from './DegronEvt.js'
 
 
-class Building1 extends Component {
+class Building4 extends Component {
+
+
 
     // This checks if user authenticated if yes automatically sends to dashboard - if enabled
     componentDidMount() {
@@ -103,17 +105,15 @@ class Building1 extends Component {
                             <p>This building is really awesome and you should invest in it</p>
                             <p>Trust me I am a business man so I know a deal.</p>
 
-                            <Link to='building1' className="card">
-                                <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975662-b72d4800-e0e9-11e8-8420-c7073e5ebbc1.jpg" alt="Card image cap"/>
+                            <Link to='building5' className="card">
+                                <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975668-b85e7500-e0e9-11e8-8749-2485ece91c2d.jpg" alt="Card image cap"/>
                                 <div className="card-body">
-                                    <h5 className="card-title">Hangzhou Xintiandi Office Towers</h5>
-                                    <p className="card-text">This is a wider card with supporting text below as
-                                        a natural lead-in to additional content. This content is a little bit
-                                        longer.</p>
+                                    <h5 className="card-title">Office Building No 463</h5>
+                                    <p className="card-text">This card has supporting text below as a natural
+                                        lead-in to additional content.</p>
                                 </div>
                                 <div className="card-footer">
-                                    <small className="text-muted">Hangzhou Xintiandi Office Towers, China</small>
-
+                                    <small className="text-muted">No.463 Tanggu Road, Hongkou District, Shanghai, China</small>
                                 </div>
                             </Link>
                             <div>
@@ -135,7 +135,7 @@ class Building1 extends Component {
     }
 }
 
-Building1.propTypes = {
+Building4.propTypes = {
     auth: PropTypes.object.isRequired
 };
 
@@ -143,4 +143,4 @@ const mapStateToProps = state => ({
     auth: state.auth
 });
 
-export default connect(mapStateToProps)(Building1);
+export default connect(mapStateToProps)(Building4);

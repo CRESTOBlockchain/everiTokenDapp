@@ -12,7 +12,8 @@ import './css/sidebar.css';
 import { investEVT, importWallet } from './DegronEvt.js'
 
 
-class Building1 extends Component {
+class Building5 extends Component {
+
 
     // This checks if user authenticated if yes automatically sends to dashboard - if enabled
     componentDidMount() {
@@ -104,7 +105,7 @@ class Building1 extends Component {
                             <p>Trust me I am a business man so I know a deal.</p>
 
                             <Link to='building1' className="card">
-                                <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975662-b72d4800-e0e9-11e8-8420-c7073e5ebbc1.jpg" alt="Card image cap"/>
+                                <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975668-b85e7500-e0e9-11e8-8749-2485ece91c2d.jpg" alt="Card image cap"/>
                                 <div className="card-body">
                                     <h5 className="card-title">Hangzhou Xintiandi Office Towers</h5>
                                     <p className="card-text">This is a wider card with supporting text below as
@@ -135,7 +136,7 @@ class Building1 extends Component {
     }
 }
 
-Building1.propTypes = {
+Building5.propTypes = {
     auth: PropTypes.object.isRequired
 };
 
@@ -143,4 +144,4 @@ const mapStateToProps = state => ({
     auth: state.auth
 });
 
-export default connect(mapStateToProps)(Building1);
+export default connect(mapStateToProps)(Building5);

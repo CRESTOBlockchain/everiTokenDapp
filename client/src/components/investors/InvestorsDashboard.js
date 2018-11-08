@@ -104,77 +104,67 @@ class InvestorsDashboard extends Component {
                                     <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975662-b72d4800-e0e9-11e8-8420-c7073e5ebbc1.jpg" alt="Card image cap"/>
                                         <div className="card-body">
                                             <h5 className="card-title">Hangzhou Xintiandi Office Towers</h5>
-                                            <p className="card-text">This is a wider card with supporting text below as
-                                                a natural lead-in to additional content. This content is a little bit
-                                                longer.</p>
+                                            <p className="card-text">Buy Now</p>
                                         </div>
                                         <div className="card-footer">
                                             <small className="text-muted">Hangzhou Xintiandi Office Towers, China</small>
                                         </div>
                                 </Link>
-                                <div className="card">
+                                <Link to='building2' className="card">
                                     <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975664-b7c5de80-e0e9-11e8-9845-307e3dfa8fd1.jpg" alt="Card image cap"/>
                                         <div className="card-body">
                                             <h5 className="card-title">Hongkou Technology and Financial Building</h5>
-                                            <p className="card-text">This card has supporting text below as a natural
-                                                lead-in to additional content.</p>
+                                            <p className="card-text">Buy Now</p>
                                         </div>
                                         <div className="card-footer">
                                             <small className="text-muted">No.463 Tanggu Road, Hongkou District, Shanghai, China</small>
                                         </div>
-                                </div>
-                                <div className="card">
+                                </Link>
+                                <Link to='building3' className="card">
                                     <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975665-b85e7500-e0e9-11e8-8f78-2212413f600b.jpg" alt="Card image cap"/>
                                         <div className="card-body">
                                             <h5 className="card-title">IFFG Office - Hangzhou</h5>
-                                            <p className="card-text">This is a wider card with supporting text below as
-                                                a natural lead-in to additional content. This card has even longer
-                                                content than the first to show that equal height action.</p>
+                                            <p className="card-text">Buy Now</p>
                                         </div>
                                         <div className="card-footer">
                                             <small className="text-muted">IFFG Office-Hangzhou, Shanghai Shi, China</small>
                                         </div>
-                                </div>
+                                </Link>
                             </div>
 
                             <hr/>
 
                             <div className="card-deck">
-                                <div className="card">
+                                <Link to='building4' className="card">
                                     <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975666-b85e7500-e0e9-11e8-90a8-8a025077979d.jpg" alt="Card image cap"/>
                                     <div className="card-body">
                                         <h5 className="card-title">Jin Mao Tower</h5>
-                                        <p className="card-text">This is a wider card with supporting text below as
-                                            a natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
+                                        <p className="card-text">Buy Now</p>
                                     </div>
                                     <div className="card-footer">
                                         <small className="text-muted">88 Century Ave, LuJiaZui, Pudong Xinqu, China</small>
                                     </div>
-                                </div>
-                                <div className="card">
+                                </Link>
+                                <Link to='building5' className="card">
                                     <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975668-b85e7500-e0e9-11e8-8749-2485ece91c2d.jpg" alt="Card image cap"/>
                                     <div className="card-body">
                                         <h5 className="card-title">Office Building No 463</h5>
-                                        <p className="card-text">This card has supporting text below as a natural
-                                            lead-in to additional content.</p>
+                                        <p className="card-text">Buy Now</p>
                                     </div>
                                     <div className="card-footer">
                                         <small className="text-muted">No.463 Tanggu Road, Hongkou District, Shanghai, China</small>
                                     </div>
-                                </div>
-                                <div className="card">
+                                </Link>
+                                <Link to='building6' className="card">
                                     <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975672-b98fa200-e0e9-11e8-891b-8a70b5bb1d7c.jpg" alt="Card image cap"/>
                                     <div className="card-body">
                                         <h5 className="card-title">One Lujiazui</h5>
-                                        <p className="card-text">This is a wider card with supporting text below as
-                                            a natural lead-in to additional content. This card has even longer
-                                            content than the first to show that equal height action.</p>
+                                        <p className="card-text">Buy Now</p>
                                     </div>
                                     <div className="card-footer">
                                         <small className="text-muted">Lujiazui Ring Rd, LuJiaZui, Pudong Xinqu, Shanghai Shi, China</small>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
                         </main>
                     </div>
