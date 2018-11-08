@@ -103,29 +103,33 @@ class Building1 extends Component {
                             <p>This building is really awesome and you should invest in it</p>
                             <p>Trust me I am a business man so I know a deal.</p>
 
-                            <Link to='building1' className="card">
+                            <div className="card" style={{maxWidth: '700px'}}>
                                 <img className="card-img-top" src="https://user-images.githubusercontent.com/21117852/47975662-b72d4800-e0e9-11e8-8420-c7073e5ebbc1.jpg" alt="Card image cap"/>
                                 <div className="card-body">
                                     <h5 className="card-title">Hangzhou Xintiandi Office Towers</h5>
-                                    <p className="card-text">This is a wider card with supporting text below as
-                                        a natural lead-in to additional content. This content is a little bit
-                                        longer.</p>
+
+
+                                    <section>
+                                    <p className="card-text">Status of Everitoken blockchain&nbsp; <input type="text" id="status" value="Unconnected"/></p>
+
+                                        <p className='card-text'>Step 1: Load Wallet </p>
+                                    <p className='card-text'>Investor: Michael &nbsp;&nbsp;<button className="btn btn-primary" onClick={importWallet} >Load Wallet</button></p>
+                                    <p className='card-text'><b>Michael's Wallet</b>: Everitoken (EVTs): <input type="text" value="" id="evt"></input> Degron(Degs): <input type="text" id="deg"></input>
+                                        <p className='card-text'>Version of Everitoken blockchain &nbsp;
+                                            <input type="text" id="version"/>
+
+                                    <hr/>
+                                            <p className='card-text'>Step 2: Type in amount you wish to invest and click Invest button </p></p>
+                                    </p>
+                                    <p>Using Everitoken(<b>EVT</b>) you can now invest in real estate, invest your EVT and get Degron token(<b>Deg</b>) and safeguard your money and future"</p>
+                                    <p>Invest EVT amount in this property (example: 20): <input type="text" id="sendEVT"></input> <button className="btn btn-primary" onClick={investEVT} >invest</button></p> <p id="investClear"></p>
+                                    </section>
                                 </div>
                                 <div className="card-footer">
                                     <small className="text-muted">Hangzhou Xintiandi Office Towers, China</small>
 
                                 </div>
-                            </Link>
-                            <div>
-                                <p>Status of Everitoken blockchain&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="status" value="Unconnected"></input> <b>&nbsp;Step 1: Load Wallet </b></p>
-                                <p>Version of Everitoken blockchain &nbsp;<input type="text" id="version"></input><b>&nbsp;&nbsp;Step 2: Type in amount you wish to invest and click Invest button </b></p>
                             </div>
-                            <p>Investor: Michael &nbsp;&nbsp;<button className="btn btn-primary" onClick={importWallet} >Load Wallet</button></p>
-                            <p><b>Michael's Wallet</b>: Everitoken (EVTs): <input type="text" value="" id="evt"></input> Degron(Degs): <input type="text" id="deg"></input>
-                            </p>
-                            <p>Using Everitoken(<b>EVT</b>) you can now invest in real estate, invest your EVT and get Degron token(<b>Deg</b>) and safeguard your money and future"</p>
-                            <p>Invest EVT amount in this property (example: 20): <input type="text" id="sendEVT"></input> <button className="btn btn-primary" onClick={investEVT} >invest</button></p> <p id="investClear"></p>
-
 
                         </main>
                     </div>

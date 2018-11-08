@@ -115,15 +115,21 @@ class Building2 extends Component {
                                     <small className="text-muted">No.463 Tanggu Road, Hongkou District, Shanghai, China</small>
                                 </div>
                             </Link>
-                            <div>
-                                <p>Status of Everitoken blockchain&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="status" value="Unconnected"></input> <b>&nbsp;Step 1: Load Wallet </b></p>
-                                <p>Version of Everitoken blockchain &nbsp;<input type="text" id="version"></input><b>&nbsp;&nbsp;Step 2: Type in amount you wish to invest and click Invest button </b></p>
-                            </div>
-                            <p>Investor: Michael &nbsp;&nbsp;<button className="btn btn-primary" onClick={importWallet} >Load Wallet</button></p>
-                            <p><b>Michael's Wallet</b>: Everitoken (EVTs): <input type="text" value="" id="evt"></input> Degron(Degs): <input type="text" id="deg"></input>
-                            </p>
-                            <p>Using Everitoken(<b>EVT</b>) you can now invest in real estate, invest your EVT and get Degron token(<b>Deg</b>) and safeguard your money and future"</p>
-                            <p>Invest EVT amount in this property (example: 20): <input type="text" id="sendEVT"></input> <button className="btn btn-primary" onClick={investEVT} >invest</button></p> <p id="investClear"></p>
+                            <section>
+                                <p className="card-text">Status of Everitoken blockchain&nbsp; <input type="text" id="status" value="Unconnected"/></p>
+
+                                <p className='card-text'>Step 1: Load Wallet </p>
+                                <p className='card-text'>Investor: Michael &nbsp;&nbsp;<button className="btn btn-primary" onClick={importWallet} >Load Wallet</button></p>
+                                <p className='card-text'><b>Michael's Wallet</b>: Everitoken (EVTs): <input type="text" value="" id="evt"></input> Degron(Degs): <input type="text" id="deg"></input>
+                                    <p className='card-text'>Version of Everitoken blockchain &nbsp;
+                                        <input type="text" id="version"/>
+
+                                        <hr/>
+                                        <p className='card-text'>Step 2: Type in amount you wish to invest and click Invest button </p></p>
+                                </p>
+                                <p>Using Everitoken(<b>EVT</b>) you can now invest in real estate, invest your EVT and get Degron token(<b>Deg</b>) and safeguard your money and future"</p>
+                                <p>Invest EVT amount in this property (example: 20): <input type="text" id="sendEVT"></input> <button className="btn btn-primary" onClick={investEVT} >invest</button></p> <p id="investClear"></p>
+                            </section>
 
 
                         </main>
