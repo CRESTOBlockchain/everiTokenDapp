@@ -31,34 +31,22 @@ class InvestorsDashboard extends Component {
                                         Dashboard <span className="sr-only">(current)</span>
                                     </Link>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">
+                                        <Link className="nav-link" to='chart'>
                                             <FontAwesomeIcon icon={faChartLine} className='iconCSS'/>
                                             Charts<span className="badge badge-primary" style={{marginLeft: "15px"}}>8</span>
-                                        </a>
+                                        </Link>
                                     </li>
+                                    {/*<li className="nav-item">*/}
+                                        {/*<a className="nav-link" href="#">*/}
+                                            {/*<FontAwesomeIcon icon={faMapSigns} className='iconCSS'/>Maps*/}
+                                        {/*</a>*/}
+                                    {/*</li>*/}
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">
-
-                                            <FontAwesomeIcon icon={faMapSigns} className='iconCSS'/>Maps
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">
+                                        <Link className="nav-link" to='Leasers'>
                                             <FontAwesomeIcon icon={faUserFriends} className='iconCSS'/>Leasers
-                                        </a>
+                                        </Link>
                                     </li>
-                                    {/*<li className="nav-item">*/}
-                                        {/*<a className="nav-link" href="#">*/}
-                                            {/*<span data-feather="bar-chart-2"></span>*/}
-                                            {/*Reports*/}
-                                        {/*</a>*/}
-                                    {/*</li>*/}
-                                    {/*<li className="nav-item">*/}
-                                        {/*<a className="nav-link" href="#">*/}
-                                            {/*<span data-feather="layers"></span>*/}
-                                            {/*Integrations*/}
-                                        {/*</a>*/}
-                                    {/*</li>*/}
+
                                 </ul>
 
 
@@ -69,7 +57,7 @@ class InvestorsDashboard extends Component {
                         <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-4">
                             <div
                                 className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                                <h1 className="h2">Degron | Dashboard Real Estate Owner</h1>
+                                <h1 className="h2">Degron | Dashboard Investor</h1>
                                 <div className="btn-toolbar mb-2 mb-md-0">
                                     <div className="btn-group mr-2">
 

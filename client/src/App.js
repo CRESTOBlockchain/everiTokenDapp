@@ -37,7 +37,8 @@ import Building3 from './components/investors/Building3';
 import Building4 from './components/investors/Building4';
 import Building5 from './components/investors/Building5';
 import Building6 from './components/investors/Building6';
-
+import Chart from './components/investors/Chart';
+import Leasers from './components/investors/Leasers';
 
 import OwnersDashboard from './components/owners/OwnersDashboard';
 import CreateProperty from './components/owners/CreateProperty';
@@ -89,7 +90,8 @@ class App extends Component {
                         <Route exact path="/building4" component={Building4}/>
                         <Route exact path="/building5" component={Building5}/>
                         <Route exact path="/building6" component={Building6}/>
-
+                        <Route exact path="/Chart" component={Chart}/>
+                        <Route exact path="/Leasers" component={Leasers}/>
 
 
                         <Route exact path="/OwnersDashboard" component={OwnersDashboard}/>

@@ -52,22 +52,22 @@ class Building1 extends Component {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">
-                                            <FontAwesomeIcon icon={faChartLine} className='iconCSS'/>
-                                            Charts<span className="badge badge-primary" style={{marginLeft: "15px"}}>8</span>
-                                        </a>
+                                        <Link className="nav-link" to='chart'>
+                                        <FontAwesomeIcon icon={faChartLine} className='iconCSS'/>
+                                        Charts<span className="badge badge-primary" style={{marginLeft: "15px"}}>8</span>
+                                    </Link>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">
+                                    {/*<li className="nav-item">*/}
+                                        {/*<a className="nav-link" href="#">*/}
 
-                                            <FontAwesomeIcon icon={faMapSigns} className='iconCSS'/>Maps
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">
-                                            <FontAwesomeIcon icon={faUserFriends} className='iconCSS'/>Leasers
-                                        </a>
-                                    </li>
+                                            {/*<FontAwesomeIcon icon={faMapSigns} className='iconCSS'/>Maps*/}
+                                        {/*</a>*/}
+                                    {/*</li>*/}
+                                    {/*<li className="nav-item">*/}
+                                        {/*<a className="nav-link" href="#">*/}
+                                            {/*<FontAwesomeIcon icon={faUserFriends} className='iconCSS'/>Leasers*/}
+                                        {/*</a>*/}
+                                    {/*</li>*/}
                                 </ul>
 
                             </div>
